@@ -1,14 +1,12 @@
 // bower:scss
 // endbower
+
+
+// core
 @import "fonts";
 @import "bootstrap-variables-custom";
 @import "bootstrap-custom";
 
 
-// core
-
-
-//header
-.header {
-  
-}
+//components
+@import 'components/header';

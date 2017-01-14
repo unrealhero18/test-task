@@ -1,0 +1,140 @@
+.header__top {
+  min-height: 44px;
+}
+
+.header__top {
+  background-color: #eff0f3;
+}
+
+.header__top-right {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__nav-list {
+  margin-bottom: 0;
+}
+
+.header__nav-item {
+  display: inline-block;
+  &:first-child {
+    .header__nav-link {
+      padding-left: 0;
+    }
+  }
+}
+
+.header__nav-link {
+  display: inherit;
+  padding: 13px 15px;
+  color: #777;
+}
+
+.header__lang {
+  flex-basis: 20%;
+  margin-left: -8px;
+}
+
+.header__lang-trigger {
+  position: relative;
+  display: inline-block;
+  margin: 0 10px;
+  padding: 14px 1px;
+  height: 44px;
+  color: #777;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.header__lang-trigger_active {
+  color: currentColor;
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: $brand-danger;
+  }
+}
+
+.header__city-label {
+  margin-right: 15px;
+  color: $gray;
+}
+
+.header__city-select {
+  width: 79px;
+  height: 100%;
+  .chosen-single {
+    padding-top: 10px;
+    height: inherit;
+    background: transparent none;
+    border-color: #d8d9dc;
+    border-width: 0 1px 0;
+    border-radius: 0;
+    box-shadow: none;
+    div {
+      top: 50%;
+      margin-top: -5px;
+      height: auto;
+      b {
+        @extend .icon;
+        @extend .icon-arrow-bottom;
+        background-image: none;
+        font-size: 8px;
+      }
+    }
+  }
+  &.chosen-container-active {
+    .chosen-single {
+      border-color: #d8d9dc;
+      border-width: 0 1px 0;
+      background: transparent none;
+    }
+  }
+  .chosen-drop {
+    border-color: #d8d9dc;
+    box-shadow: none;
+    border-radius: 0;
+  }
+  .chosen-results {
+    margin: 0;
+    padding: 4px;
+    background-color: #eff0f3;
+    li {
+      &.highlighted {
+        background: $brand-danger none;
+      }
+    }
+  }
+}
+
+.header__city-select-arrow {
+  position: relative;
+  left: -20px;
+  font-size: 8px;
+}
+
+.header__auth {
+  flex-basis: 43%;
+}
+
+.header__auth-link {
+  display: inline-block;
+  margin-left: 32px;
+  padding: 12px 0;
+  color: $gray-light;
+  &:hover {
+    text-decoration: none;
+    color: $brand-danger;
+  }
+}
+
+.header__auth-link-icon {
+  margin-right: 5px;
+  vertical-align: -1px;
+  font-size: 15px;
+}
