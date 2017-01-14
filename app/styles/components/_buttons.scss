@@ -1,0 +1,30 @@
+.btn {
+  display: inline-block;
+  text-align: center;
+  &.btn_md {
+    padding: 7px 21px;
+    font-size: 13px;
+  }
+}
+
+.btn_bordered {
+  border-width: 2px;
+  border-style: solid;
+  background-color: transparent;
+  transition: background-color .3s;
+}
+
+.btn_warning {
+  &.btn_bordered {
+    border-color: $brand-warning;
+    &:hover {
+      background-color: $brand-warning;
+    }
+  }
+}
+
+.btn_danger {
+  &.btn_bordered {
+    border-color: $brand-danger;
+  }
+}

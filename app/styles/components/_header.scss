@@ -28,6 +28,9 @@
   display: inherit;
   padding: 13px 15px;
   color: #777;
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .header__lang {
@@ -42,9 +45,6 @@
   padding: 14px 1px;
   height: 44px;
   color: #777;
-  &:hover {
-    text-decoration: none;
-  }
 }
 
 .header__lang-trigger_active {
@@ -89,6 +89,7 @@
     }
   }
   &.chosen-container-active {
+    @include tab-focus;
     .chosen-single {
       border-color: #d8d9dc;
       border-width: 0 1px 0;
@@ -128,7 +129,6 @@
   padding: 12px 0;
   color: $gray-light;
   &:hover {
-    text-decoration: none;
     color: $brand-danger;
   }
 }
@@ -137,4 +137,45 @@
   margin-right: 5px;
   vertical-align: -1px;
   font-size: 15px;
+}
+
+.header__middle-both {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__search {
+  position: relative;
+}
+
+.header__search-field {
+  padding: 0 25px;
+  width: 348px;
+  height: 46px;
+  border-radius: 23px;
+  border: 1px solid #c2c2c2;
+}
+
+.header__search-btn {
+  position: absolute;
+  top: 13px;
+  right: 13px;
+  border: 0;
+  background-color: transparent;
+  font-size: 17px;
+}
+
+.header__phone-link {
+  font-size: 18px;
+}
+
+.header__phone-dd-arrow {
+  margin: 0 10px 0 1px;
+  vertical-align: 2px;
+  font-size: 8px;
+}
+
+.header__actions {
+  margin-right: -5px;
 }
