@@ -3,7 +3,7 @@
   "private": true,
   "dependencies": {
     "jquery": "~2.1.1",
-    "normalize-css": "^5.0.0"
+    "bootstrap-sass": "^3.3.7"
   },
   "devDependencies": {
     "chai": "^3.5.0",

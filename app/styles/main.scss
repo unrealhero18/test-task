@@ -1,13 +1,14 @@
 // bower:scss
 // endbower
-
-
-// vars
-$font: "Proxima Nova", sans-serif;
+@import "fonts";
+@import "bootstrap-variables-custom";
+@import "bootstrap-custom";
 
 
 // core
-body {
-  font-family: $font;
-  line-height: 1.2;
+
+
+//header
+.header {
+  
 }

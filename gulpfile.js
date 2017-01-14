@@ -145,7 +145,8 @@ gulp.task('wiredep', () => {
   gulp.src('app/styles/*.scss')
     .pipe($.filter(file => file.stat && file.stat.size))
     .pipe(wiredep({
-      ignorePath: /^(\.\.\/)+/
+      ignorePath: /^(\.\.\/)+/,
+      exclude: [ 'bower_components/bootstrap-sass/' ]
     }))
     .pipe(gulp.dest('app/styles'));
 
