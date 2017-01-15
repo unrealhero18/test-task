@@ -3,6 +3,12 @@
   color: $brand-warning;
 }
 
+.rating__score {
+  margin-left: 10px;
+  font-weight: 700;
+  font-size: 14px;
+}
+
 .rating__icon_mark ~ .rating__icon {
   color: currentColor;
 }

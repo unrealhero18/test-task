@@ -1,0 +1,15 @@
+.expand-data {
+  display: none;
+}
+
+div.expand-data {
+  &.active {
+    display: block;
+  }
+}
+
+tfoot.expand-data {
+  &.active {
+    display: table-footer-group;
+  }
+}

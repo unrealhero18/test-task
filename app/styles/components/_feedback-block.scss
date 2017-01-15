@@ -1,0 +1,139 @@
+.feedback-block {
+  padding: 27px 0 29px 30px;
+  border-width: 0 1px 1px 1px;
+  border-style: solid;
+  border-color: $brand-warning;
+}
+
+.feedback-block_first {
+  border-top-width: 1px;
+}
+
+.feedback-block__wrap {
+  position: relative;
+  padding-right: 200px;
+}
+
+.feedback-block__info {
+  margin-bottom: 10px;
+}
+
+.feedback-block__author {
+  margin-right: 20px;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: -0.6px;
+}
+
+.feedback-block__pubdate {
+  color: $gray-lighter;
+}
+
+.feedback-block__text {
+  margin-bottom: 7px;
+  max-height: 60px;
+  overflow: hidden;
+  line-height: 1.538465;
+  &.active {
+    max-height: none;
+  }
+}
+
+.feedback-block__text + .feedback-block__actions {
+  padding-top: 4px;
+}
+
+.feedback-block__expand-trigger {
+  display: block;
+  margin-bottom: 13px;
+}
+
+.feedback-block__values {
+  padding-top: 8px;
+}
+
+.feedback-block__value-label {
+  margin-right: 5px;
+}
+
+.feedback-block__value_success {
+  margin-bottom: 20px;
+  .feedback-block__value-label {
+    color: $brand-success;
+  }
+}
+
+.feedback-block__value_danger {
+  margin-bottom: 11px;
+  .feedback-block__value-label {
+    color: $brand-danger;
+  }
+}
+
+.feedback-block__actions {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.feedback-block__actions-left {
+  padding-top: 6px;
+}
+
+.feedback-block__action-answers {
+  margin-right: 34px;
+  border-bottom: 1px solid rgba($gray-dark, .3);
+}
+
+.feedback-block__action-label {
+  color: $gray-light;
+}
+
+.feedback-block__action-finger {
+  padding: 0 2px 0 10px;
+}
+
+.feedback-block__action-finger-icon {
+  margin-right: 3px;
+  font-size: 18px;
+}
+
+.feedback-block__action-finger-count {
+  font-weight: 700;
+}
+
+.feedback-block__action-finger_up {
+  .feedback-block__action-finger-count {
+    color: $brand-success;
+  }
+}
+
+.feedback-block__action-finger_down {
+  .feedback-block__action-finger-icon {
+    vertical-align: -5px;
+  }
+  .feedback-block__action-finger-count {
+    color: $brand-danger;
+  }
+}
+
+.feedback-block__mark {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0 22px;
+  width: 175px;
+  border-left: 1px solid #e9eaeb;
+}
+
+.feedback-block__mark-title {
+  margin: 2px 0 13px;
+  font-size: 16px;
+}
+
+.feedback-block__mark-rating {
+  .rating__icon {
+    font-size: 12px;
+  }
+}

@@ -11,6 +11,7 @@
 
 
 //components
+@import 'components/utils';
 @import 'components/header';
 @import 'components/logo';
 @import 'components/buttons';
@@ -25,3 +26,5 @@
 @import 'components/product-cell';
 @import 'components/product-available';
 @import 'components/products-similar';
+@import 'components/table';
+@import 'components/feedback-block';

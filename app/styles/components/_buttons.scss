@@ -1,16 +1,15 @@
 .btn {
   display: inline-block;
+  border: 0;
   text-align: center;
-}
-
-.btn_bordered {
-  border-width: 2px;
-  border-style: solid;
-  background-color: transparent;
   transition: background-color .3s, color .3s;
 }
 
 .btn_warning {
+  background-color: $brand-warning;
+  &:hover {
+    background-color: darken($brand-warning, 15%);
+  }
   &.btn_bordered {
     border-color: $brand-warning;
     &:hover {
@@ -20,6 +19,10 @@
 }
 
 .btn_danger {
+  background-color: $brand-danger;
+  &:hover {
+    background-color: darken($brand-danger, 15%);
+  }
   &.btn_bordered {
     border-color: $brand-danger;
     &:hover {
@@ -29,9 +32,20 @@
   }
 }
 
-.btn_md {
+.btn_bordered {
+  border-width: 2px;
+  border-style: solid;
+  background-color: transparent;
+}
+
+.btn_sm {
   padding: 7px 21px;
   font-size: 13px;
+}
+
+.btn_md {
+  padding: 10px 17px 11px;
+  font-size: 15px;
 }
 
 .btn_lg {

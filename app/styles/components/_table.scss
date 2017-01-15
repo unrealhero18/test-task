@@ -1,0 +1,24 @@
+.table {
+  width: 100%;
+}
+
+.table_striped {
+  tbody {
+    .table__row {
+      &:nth-child(odd) {
+        background-color: #eff0f3;
+      }
+    }
+  }
+  tfoot {
+    .table__row {
+      &:nth-child(even) {
+        background-color: #eff0f3;
+      }
+    }
+  }
+}
+
+.table__data {
+  padding: 14px 23px 15px;
+}
