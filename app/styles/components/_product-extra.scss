@@ -1,0 +1,36 @@
+.product-extra__nav {
+  position: relative;
+}
+
+.product-extra__nav-list {
+  border-bottom: 2px solid #e9eaeb;
+}
+
+.product-extra__nav-item {
+  display: inline-block;
+  &:first-child {
+    .product-extra__nav-link {
+      padding-left: 0;
+    }
+  }
+}
+
+.product-extra__nav-link {
+  display: inline-block;
+  padding: 15px 38px 18px;
+  font-weight: 700;
+  font-size: 16px;
+  color: $gray-light;
+  &:hover,
+  &.active {
+    color: $brand-danger;
+  }
+}
+
+.product-extra__magic-line {
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  background-color: $brand-danger;
+  transition: left .3s, width .3s;
+}
