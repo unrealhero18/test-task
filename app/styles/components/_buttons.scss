@@ -1,17 +1,13 @@
 .btn {
   display: inline-block;
   text-align: center;
-  &.btn_md {
-    padding: 7px 21px;
-    font-size: 13px;
-  }
 }
 
 .btn_bordered {
   border-width: 2px;
   border-style: solid;
   background-color: transparent;
-  transition: background-color .3s;
+  transition: background-color .3s, color .3s;
 }
 
 .btn_warning {
@@ -26,5 +22,28 @@
 .btn_danger {
   &.btn_bordered {
     border-color: $brand-danger;
+    &:hover {
+      background-color: $brand-danger;
+      color: #fff;
+    }
   }
+}
+
+.btn_md {
+  padding: 7px 21px;
+  font-size: 13px;
+}
+
+.btn_lg {
+  padding: 13px 32px 14px;
+  font-size: 18px;
+}
+
+.btn_block {
+  display: block;
+  width: 100%;
+}
+
+.btn_bold {
+  font-weight: 700;
 }

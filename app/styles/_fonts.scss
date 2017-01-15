@@ -1,9 +1,9 @@
 @font-face {
   font-family: 'icons';
   src:
-    url('../fonts/icons.ttf?h84zmr') format('truetype'),
-    url('../fonts/icons.woff?h84zmr') format('woff'),
-    url('../fonts/icons.svg?h84zmr#icons') format('svg');
+    url('../fonts/icons.ttf?yczvgk') format('truetype'),
+    url('../fonts/icons.woff?yczvgk') format('woff'),
+    url('../fonts/icons.svg?yczvgk#icons') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -20,6 +20,24 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-comment:before {
+  content: "\e911";
+}
+.icon-check:before {
+  content: "\e90e";
+}
+.icon-share:before {
+  content: "\e90f";
+}
+.icon-star:before {
+  content: "\e910";
+}
+.icon-three-d:before {
+  content: "\e90d";
+}
+.icon-arrow-right:before {
+  content: "\e90c";
+}
 .icon-menu-left:before {
   content: "\e907";
 }

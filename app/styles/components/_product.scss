@@ -1,0 +1,136 @@
+.product {
+  margin-bottom: 69px;
+}
+
+.product__header {
+  margin-bottom: 27px;
+}
+
+.product__id {
+  float: right;
+  position: relative;
+  padding: 9px 10px 8px 16px;
+  background-color: $brand-warning;
+  &:after {
+    content: '';
+    position: absolute;
+    left: -7px;
+    top: 50%;
+    margin-top: -7px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: #fff;
+  }
+}
+
+.product__name {
+  margin-top: 21px;
+}
+
+.product__preview {
+  padding-top: 5px;
+}
+
+.product__preview-pagers {
+  float: left;
+  position: relative;
+  width: 150px;
+  z-index: 1;
+}
+
+.product__preview-pager-link {
+  float: left;
+  position: relative;
+  margin: 0 9px 9px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 65px;
+  height: 65px;
+  border: 1px solid #e9eaeb;
+  &.active {
+    border-color: $brand-warning;
+  }
+}
+
+.product__preview-pager-link_border_false {
+  border-color: transparent;
+  &.active {
+    border-color: transparent;
+  }
+}
+
+.product__preview-pager-img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.product__preview-pager-icon {
+  font-size: 30px;
+  color: $brand-danger;
+}
+
+.product__preview-slide {
+  padding: 8px 10px 0 0;
+  text-align: right;
+  &:focus {
+    outline: 0;
+  }
+}
+
+.product__description {
+  padding-left: 63px;
+}
+
+.product__state {
+  padding: 2px 0 40px 0;
+}
+
+.product__preview-slide-img {
+  margin-left: auto;
+  max-width: 100%;
+}
+
+.product__state-available {
+  margin-right: 20px;
+  vertical-align: middle;
+}
+
+.product__state-available-rating {
+  margin-right: 6px;
+  vertical-align: middle;
+}
+
+.product__state-feedback {
+  margin: 0 16px;
+  vertical-align: middle;
+  color: $gray-light;
+}
+
+.product__state-feedback-icon {
+  margin-right: 3px;
+  vertical-align: inherit;
+  &.icon-comment {
+    font-size: 11px;
+  }
+  &.icon-question {
+    font-size: 13px;
+  }
+}
+
+.product__state-feedback-caption {
+  vertical-align: inherit;
+  border-bottom: 1px solid #c2c2c2;
+  &:hover {
+    border-bottom-color: currentColor;
+  }
+}
+
+.product__order {
+  float: left;
+}
+
+.product__similar {
+  float: right;
+}

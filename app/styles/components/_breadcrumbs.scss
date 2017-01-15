@@ -1,0 +1,21 @@
+.breadcrumbs__list {
+  margin-bottom: 0;
+}
+
+.breadcrumbs__item {
+  display: inline-block;
+  padding: 18px 0 0;
+  color: #999;
+}
+
+.breadcrumbs__link {
+  color: inherit;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.breadcrumbs__icon {
+  margin: 0 9px;
+  font-size: 11px;
+}

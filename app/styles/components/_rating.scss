@@ -1,0 +1,8 @@
+.rating__icon {
+  margin: 0 2px;
+  color: $brand-warning;
+}
+
+.rating__icon_mark ~ .rating__icon {
+  color: currentColor;
+}

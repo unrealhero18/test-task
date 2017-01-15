@@ -146,13 +146,14 @@ gulp.task('wiredep', () => {
     .pipe($.filter(file => file.stat && file.stat.size))
     .pipe(wiredep({
       ignorePath: /^(\.\.\/)+/,
-      exclude: [ 'bower_components/bootstrap-sass/' ]
+      exclude: [ 'bower_components/bootstrap-sass/assets/stylesheets/' ]
     }))
     .pipe(gulp.dest('app/styles'));
 
   gulp.src('app/*.html')
     .pipe(wiredep({
-      ignorePath: /^(\.\.\/)*\.\./
+      ignorePath: /^(\.\.\/)*\.\./,
+      exclude: [ 'bower_components/bootstrap-sass/assets/javascripts/' ]
     }))
     .pipe(gulp.dest('app'));
 });
