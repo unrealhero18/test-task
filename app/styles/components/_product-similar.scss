@@ -28,18 +28,6 @@
   max-height: 100%;
 }
 
-.product-similar__available_true {
-  color: $brand-success;
-  .icon {
-    @extend .icon-check;
-    font-size: 9px;
-  }
-}
-
-.product-similar__available_ends {
-  color: $brand-danger;
-}
-
 .product-similar__name {
   height: 44px;
   overflow: hidden;

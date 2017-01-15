@@ -1,0 +1,12 @@
+.product-available_true {
+  color: $brand-success;
+  .product-available__icon {
+    @extend .icon;
+    @extend .icon-check;
+    font-size: 9px;
+  }
+}
+
+.product-available_ends {
+  color: $brand-danger;
+}

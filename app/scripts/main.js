@@ -9,7 +9,7 @@ $(function() {
 
   //slick
   (function() {
-    var $slider = $('.js-product-slider');
+    var $slider = $('.js-single-product-slider');
 
     $slider.slick({
       arrows: false,
@@ -25,6 +25,19 @@ $(function() {
       var slideInder = + this.dataset.slide;
       $slider.slick('slickGoTo', slideInder);
     })
+  })();
+
+  (function() {
+    var $slider = $('.js-many-products-slider');
+
+    $slider.slick({
+      infinite: true,
+      slidesToShow: 5,
+      slidesToScroll: 2,
+      prevArrow: '<button type="button" class="slick-arrow slick-prev icon icon-arrow-left"></button>',
+      nextArrow: '<button type="button" class="slick-arrow slick-next icon icon-arrow-right"></button>',
+      dots: false
+    });
   })();
 
   //modal
@@ -68,5 +81,10 @@ $(function() {
     $('.js-product-enav').on('mouseleave', 'a', function() {
       $linkCollections.filter('.active').magicLine();
     });
+  })();
+
+  //element fixed
+  (function() {
+
   })();
 });
