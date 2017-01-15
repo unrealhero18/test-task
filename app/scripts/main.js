@@ -83,8 +83,20 @@ $(function() {
     });
   })();
 
-  //element fixed
+  //element sticky
   (function() {
+    var $productNav = $('.js-product-sticky');
 
+    $(window).on('scroll', function() {
+      var scrollY = (window.scrollY);
+      var targetTop = $productNav.parent().offset().top;
+      var isFixed = $productNav.hasClass('fixed');
+
+      if ( scrollY >= targetTop && !isFixed ) {
+        $productNav.addClass('fixed');
+      } else if ( scrollY < targetTop && isFixed ) {
+        $productNav.removeClass('fixed');
+      }
+    });
   })();
 });

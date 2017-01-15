@@ -1,8 +1,17 @@
+.product-extra__nav-wrap {
+  height: 54px;
+}
+
 .product-extra__nav {
   position: relative;
+  &.fixed {
+    position: fixed;
+    top: 0;
+  }
 }
 
 .product-extra__nav-list {
+  margin-bottom: 0;
   border-bottom: 2px solid #e9eaeb;
 }
 
