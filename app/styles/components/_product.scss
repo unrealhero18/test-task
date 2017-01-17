@@ -100,27 +100,6 @@
 
 .product__state-feedback {
   margin: 0 16px;
-  vertical-align: middle;
-  color: $gray-light;
-}
-
-.product__state-feedback-icon {
-  margin-right: 3px;
-  vertical-align: inherit;
-  &.icon-comment {
-    font-size: 11px;
-  }
-  &.icon-question {
-    font-size: 13px;
-  }
-}
-
-.product__state-feedback-caption {
-  vertical-align: inherit;
-  border-bottom: 1px solid #c2c2c2;
-  &:hover {
-    border-bottom-color: currentColor;
-  }
 }
 
 .product__order {

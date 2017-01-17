@@ -1,0 +1,20 @@
+.tab-trigger {
+  float: left;
+  margin-left: -1px;
+  padding: 0 19px;
+  height: 39px;
+  border: 1px solid #e1e1e1;
+  background-color: transparent;
+  color: $gray-light;
+  &.active {
+    position: relative;
+    border-color: #fb2539;
+    color: $gray;
+  }
+}
+
+.tab-trigger_md {
+  padding: 0 36px 0 37px;
+  font-weight: 700;
+  font-size: 16px;
+}

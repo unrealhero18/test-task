@@ -1,0 +1,23 @@
+.product-feedback {
+  vertical-align: middle;
+  color: $gray-light;
+}
+
+.product-feedback__icon {
+  margin-right: 3px;
+  vertical-align: inherit;
+  &.icon-comment {
+    font-size: 11px;
+  }
+  &.icon-question {
+    font-size: 13px;
+  }
+}
+
+.product-feedback__caption {
+  vertical-align: inherit;
+  border-bottom: 1px solid #c2c2c2;
+  &:hover {
+    border-bottom-color: currentColor;
+  }
+}

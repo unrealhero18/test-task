@@ -20,11 +20,13 @@
 
 .btn_danger {
   background-color: $brand-danger;
+  color: #fff;
   &:hover {
     background-color: darken($brand-danger, 15%);
   }
   &.btn_bordered {
     border-color: $brand-danger;
+    color: $brand-danger;
     &:hover {
       background-color: $brand-danger;
       color: #fff;

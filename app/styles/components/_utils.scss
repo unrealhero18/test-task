@@ -20,3 +20,12 @@ tfoot.expand-data {
     display: block;
   }
 }
+
+.tabs-data_overflow > * {
+  max-height: 0;
+  overflow: hidden;
+  &.active {
+    max-height: none;
+    overflow: visible;
+  }
+}

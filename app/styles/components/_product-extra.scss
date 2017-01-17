@@ -102,21 +102,8 @@
   padding: 2px 0 30px 1px;
 }
 
-.product-extra__feedback-tab-trigger {
-  float: left;
-  margin-left: -1px;
-  width: 170px;
-  height: 39px;
-  border: 1px solid #e1e1e1;
-  background-color: transparent;
-  font-weight: 700;
-  font-size: 16px;
-  color: $gray-light;
-  &.active {
-    position: relative;
-    border-color: #fb2539;
-    color: $gray;
-  }
+.product-extra__feedback-actions-left {
+  padding-left: 1px;
 }
 
 .product-extra__video-gallery {
