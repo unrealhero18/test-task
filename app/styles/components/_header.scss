@@ -1,8 +1,5 @@
 .header__top {
   min-height: 44px;
-}
-
-.header__top {
   background-color: #eff0f3;
 }
 
@@ -71,45 +68,26 @@
   .chosen-single {
     padding-top: 10px;
     height: inherit;
-    background: transparent none;
     border-color: #d8d9dc;
     border-width: 0 1px 0;
-    border-radius: 0;
-    box-shadow: none;
     div {
-      top: 50%;
-      margin-top: -5px;
-      height: auto;
       b {
-        @extend .icon;
-        @extend .icon-arrow-bottom;
-        background-image: none;
         font-size: 8px;
       }
     }
   }
   &.chosen-container-active {
-    @include tab-focus;
     .chosen-single {
       border-color: #d8d9dc;
       border-width: 0 1px 0;
-      background: transparent none;
     }
   }
   .chosen-drop {
+    border-width: 0 1px 1px;
     border-color: #d8d9dc;
-    box-shadow: none;
-    border-radius: 0;
   }
   .chosen-results {
-    margin: 0;
-    padding: 4px;
     background-color: #eff0f3;
-    li {
-      &.highlighted {
-        background: $brand-danger none;
-      }
-    }
   }
 }
 

@@ -99,17 +99,26 @@ $(function() {
 
   //element sticky
   (function() {
-    var $productNav = $('.js-product-sticky');
+    var $stickyElements = $('.js-sticky-element');
+    var $path = $('.js-sticky-path');
 
     $(window).on('scroll', function() {
-      var scrollY = (window.scrollY);
-      var targetTop = $productNav.parent().offset().top;
-      var isFixed = $productNav.hasClass('fixed');
+      var scrollY = window.scrollY;
 
-      if ( scrollY >= targetTop && !isFixed ) {
-        $productNav.addClass('fixed');
-      } else if ( scrollY < targetTop && isFixed ) {
-        $productNav.removeClass('fixed');
+      var shiftBottom = 0;
+      $stickyElements.each(function(index, el) {
+        var height = $(el).outerHeight();
+        shiftBottom = height > shiftBottom ? height : shiftBottom;
+      });
+
+      var targetTop = $stickyElements.parent().offset().top;
+      var targetBottom = targetTop + $path.height() - shiftBottom;
+      var isFixed = $stickyElements.hasClass('fixed');
+
+      if ( scrollY >= targetTop && scrollY < targetBottom ) {
+        !isFixed && $stickyElements.addClass('fixed');
+      } else {
+        isFixed && $stickyElements.removeClass('fixed');
       }
     });
   })();

@@ -1,0 +1,33 @@
+.product-price {
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.product-price__currency {
+  font-size: .5333334em;
+}
+
+.product-price_old {
+  margin-left: 9px;
+  text-decoration: line-through;
+  font-size: 14px;
+  color: $brand-info;
+  .product-price__currency {
+    font-size: 1em;
+  }
+}
+
+.product-price_large {
+  font-size: 40px;
+  .product-price__currency {
+    margin-left: -5px;
+    font-size: .5em;
+  }
+}
+
+.product-price_small {
+  font-size: 20px;
+  .product-price__currency {
+    font-size: .8em;
+  }
+}

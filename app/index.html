@@ -53,7 +53,7 @@
 
                 <div class="header__city">
                   <label for="city-select" class="header__city-label">Ваш город: </label>
-                  <select id="city-select" name="citySelect" class="header__city-select js-chosen-select">
+                  <select id="city-select" name="citySelect" class="select-custom header__city-select js-chosen-select">
                     <option value="">Киев</option>
                     <option value="">Днепр</option>
                     <option value="">Львов</option>
@@ -371,7 +371,9 @@
 
                 <div class="clearfix">
                   <div class="product-order product__order">
-                    <p class="product-order__price">456 <small class="product-order__price-currency">грн</small></p>
+                    <p class="product-price product-price_large product-inaccessible-color product-order__price">
+                      456 <small class="product-price__currency">грн</small>
+                    </p>
 
                     <button class="product-order__btn btn btn_bordered btn_danger btn_lg btn_block btn_bold">Сообщить о поступлении</button>
 
@@ -414,8 +416,8 @@
                         80W-90 1л
                       </p>
 
-                      <p class="product-similar__price">
-                        345 <small class="product-similar__price-currency">грн</small>
+                      <p class="product-price product-price_small">
+                        345 <small class="product-price__currency">грн</small>
                       </p>
                     </div>
 
@@ -461,12 +463,12 @@
             </p>
 
             <p class="product-cell__price-wrap">
-              <span class="product-cell__price">
-                104 <small class="product-cell__price-currency">грн</small>
+              <span class="product-price product-cell__price">
+                104 <small class="product-price__currency">грн</small>
               </span>
 
-              <span class="product-cell__price product-cell__price_old">
-                125 <small class="product-cell__price-currency">грн</small>
+              <span class="product-price product-cell__price product-price_old">
+                125 <small class="product-price__currency">грн</small>
               </span>
             </p>
           </div>
@@ -494,8 +496,8 @@
             </p>
 
             <p class="product-cell__price-wrap">
-              <span class="product-cell__price">
-                456 <small class="product-cell__price-currency">грн</small>
+              <span class="product-price product-cell__price">
+                456 <small class="product-price__currency">грн</small>
               </span>
             </p>
           </div>
@@ -523,8 +525,8 @@
             </p>
 
             <p class="product-cell__price-wrap">
-              <span class="product-cell__price">
-                268 <small class="product-cell__price-currency">грн</small>
+              <span class="product-price product-cell__price">
+                268 <small class="product-price__currency">грн</small>
               </span>
             </p>
           </div>
@@ -552,8 +554,8 @@
             </p>
 
             <p class="product-cell__price-wrap">
-              <span class="product-cell__price">
-                104 <small class="product-cell__price-currency">грн</small>
+              <span class="product-price product-cell__price">
+                104 <small class="product-price__currency">грн</small>
               </span>
             </p>
           </div>
@@ -581,8 +583,8 @@
             </p>
 
             <p class="product-cell__price-wrap">
-              <span class="product-cell__price">
-                456 <small class="product-cell__price-currency">грн</small>
+              <span class="product-price product-cell__price">
+                456 <small class="product-price__currency">грн</small>
               </span>
             </p>
           </div>
@@ -611,12 +613,12 @@
             </p>
 
             <p class="product-cell__price-wrap">
-              <span class="product-cell__price">
-                104 <small class="product-cell__price-currency">грн</small>
+              <span class="product-price product-cell__price">
+                104 <small class="product-price__currency">грн</small>
               </span>
 
-              <span class="product-cell__price product-cell__price_old">
-                125 <small class="product-cell__price-currency">грн</small>
+              <span class="product-price product-cell__price product-price_old">
+                125 <small class="product-price__currency">грн</small>
               </span>
             </p>
           </div>
@@ -644,8 +646,8 @@
             </p>
 
             <p class="product-cell__price-wrap">
-              <span class="product-cell__price">
-                456 <small class="product-cell__price-currency">грн</small>
+              <span class="product-price product-cell__price">
+                456 <small class="product-price__currency">грн</small>
               </span>
             </p>
           </div>
@@ -673,8 +675,8 @@
             </p>
 
             <p class="product-cell__price-wrap">
-              <span class="product-cell__price">
-                268 <small class="product-cell__price-currency">грн</small>
+              <span class="product-price product-cell__price">
+                268 <small class="product-price__currency">грн</small>
               </span>
             </p>
           </div>
@@ -702,8 +704,8 @@
             </p>
 
             <p class="product-cell__price-wrap">
-              <span class="product-cell__price">
-                104 <small class="product-cell__price-currency">грн</small>
+              <span class="product-price product-cell__price">
+                104 <small class="product-price__currency">грн</small>
               </span>
             </p>
           </div>
@@ -731,8 +733,8 @@
             </p>
 
             <p class="product-cell__price-wrap">
-              <span class="product-cell__price">
-                456 <small class="product-cell__price-currency">грн</small>
+              <span class="product-price product-cell__price">
+                456 <small class="product-price__currency">грн</small>
               </span>
             </p>
           </div>
@@ -744,7 +746,7 @@
     <section class="product-extra">
       <div class="container">
         <div class="product-extra__nav-wrap">
-          <div class="product-extra__nav js-product-sticky">
+          <div class="product-extra__nav js-sticky-element">
             <ul class="product-extra__nav-list list-unstyled js-product-enav">
               <li class="product-extra__nav-item">
                 <a href="#characteristics" class="product-extra__nav-link">Характеристики</a>
@@ -772,7 +774,7 @@
         </div>
 
         <div class="product-extra__content clearfix">
-          <div class="product-extra__sections">
+          <div class="product-extra__sections js-sticky-path">
             <section class="product-extra__section js-expand-container" id="characteristics">
               <h4 class="product-extra__section-title">Характеристики товара</h4>
 
@@ -1393,19 +1395,19 @@
               <div class="product-extra__certs-container">
                 <div class="product-extra__certs-row">
                   <a href="images/certifications/1.jpg" class="product-extra__cert-link js-cert-modal">
-                    <img src="images/certifications/1.jpg" alt="Сертификаты соответствия" class="product-extra__cert-img">
+                    <img src="images/certifications/1.jpg" class="product-extra__cert-img" alt="Сертификаты соответствия">
                   </a>
 
                   <a href="images/certifications/2.jpg" class="product-extra__cert-link js-cert-modal">
-                    <img src="images/certifications/2.jpg" alt="Сертификаты соответствия" class="product-extra__cert-img">
+                    <img src="images/certifications/2.jpg" class="product-extra__cert-img" alt="Сертификаты соответствия">
                   </a>
 
                   <a href="images/certifications/3.jpg" class="product-extra__cert-link js-cert-modal">
-                    <img src="images/certifications/3.jpg" alt="Сертификаты соответствия" class="product-extra__cert-img">
+                    <img src="images/certifications/3.jpg" class="product-extra__cert-img" alt="Сертификаты соответствия">
                   </a>
 
                   <a href="images/certifications/4.jpg" class="product-extra__cert-link js-cert-modal">
-                    <img src="images/certifications/4.jpg" alt="Сертификаты соответствия" class="product-extra__cert-img">
+                    <img src="images/certifications/4.jpg" class="product-extra__cert-img" alt="Сертификаты соответствия">
                   </a>
                 </div>
               </div>
@@ -1413,8 +1415,59 @@
           </div>
 
           <aside class="product-extra__sidebar">
-            <div class="product-suitable">
-              
+            <div class="product-extra__sidebar-sticky-companion js-sticky-element">
+              <div class="product-suitable product-extra__suitable">
+                <a href="javascript:void(0);" class="product-suitable__img-wrap" title="Миниатюра «Castrol Magnatec 10W-40 A3/B4 4 л»" tabindex="0">
+                  <img src="images/products/miniature/14.jpg" alt="Миниатюра «Castrol Magnatec 10W-40 A3/B4 4 л»" class="product-suitable__img">
+                </a>
+
+                <p class="product-available product-available_false product-suitable__available">
+                  <span class="product-available__icon"></span>
+                  <span class="product-available__caption">Нет в наличии</span>
+                </p>
+
+                <p class="product-suitable__name product-inaccessible-color">
+                  Моторное масло Liqui Moly TOP
+                  TEC 4100 5W-40 4
+                </p>
+
+                <p class="product-suitable__price product-price product-inaccessible-color">
+                  326 <small class="product-price__currency">грн</small>
+                </p>
+
+                <div class="product-suitable__actions">
+                  <button class="btn btn_bordered btn_danger btn_sm btn_bold product-suitable__action-inform">
+                    Сообщить <br>
+                    о поступлении
+                  </button>
+
+                  <a
+                    href="javascript:void(0);"
+                    class="product-suitable__action-compare">
+                    <i class="product-suitable__action-compare-icon icon icon-weight"></i>
+                  </a>
+                </div>
+
+                <a href="javascript:void(0);" class="product-suitable__more">
+                  <span class="product-suitable__more-text">Показать все похожие товары</span>
+                </a>
+              </div>
+
+              <div class="product-extra__suitable-for">
+                <label for="suitable-for" class="product-extra__suitable-for-label">
+                  <span class="product-extra__suitable-for-icon icon icon-check"></span>
+                  Товар подходит к вашему авто:
+                </label>
+
+                <select
+                  name="suitableFor"
+                  id="suitable-for"
+                  style="width: 262px;"
+                  class="select-custom select-custom_white select-custom_md product-extra__suitable-for-select js-chosen-select">
+                  <option value="">Volkswagen Golf, 1.9</option>
+                  <option value="">Ford Focus, 1.6</option>
+                </select>
+              </div>
             </div>
           </aside>
         </div>

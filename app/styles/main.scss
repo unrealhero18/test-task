@@ -11,6 +11,7 @@
 
 
 //components
+@import 'components/select-custom';
 @import 'components/header';
 @import 'components/logo';
 @import 'components/buttons';
@@ -24,6 +25,9 @@
 @import 'components/product-extra';
 @import 'components/product-cell';
 @import 'components/product-available';
+@import 'components/product-suitable';
+@import 'components/product-price';
+@import 'components/product-inaccessible-color';
 @import 'components/products-similar';
 @import 'components/table';
 @import 'components/feedback-block';
