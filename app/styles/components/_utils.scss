@@ -13,3 +13,10 @@ tfoot.expand-data {
     display: table-footer-group;
   }
 }
+
+.tabs-data > * {
+  display: none;
+  &.active {
+    display: block;
+  }
+}

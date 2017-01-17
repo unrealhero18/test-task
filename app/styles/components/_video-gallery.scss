@@ -1,0 +1,38 @@
+.video-gallery {
+  margin: 0 -15px;
+}
+
+.video-gallery iframe,
+.video-gallery__thumb {
+  display: block;
+  width: 100%;
+}
+
+.video-gallery__element {
+  float: left;
+  position: relative;
+  padding: 0 15px;
+  width: 50%;
+}
+
+.video-gallery__play-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  padding: 8px;
+  width: 62px;
+  height: 62px;
+  border: 0;
+  border-radius: 50%;
+  background-color: #fff;
+  font-size: 46px;
+  color: $brand-danger;
+  transition: opacity 1s;
+  &.active {
+    opacity: 0;
+    pointer-events: none;
+  }
+}

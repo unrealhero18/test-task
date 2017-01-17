@@ -1,24 +1,3 @@
 .products-similar__title {
   margin-bottom: 20px;
 }
-
-.products-similar__facing {
-  position: relative;
-  .slick-arrow {
-    position: absolute;
-    top: -57px;
-    width: 45px;
-    height: 45px;
-    border: 0;
-    font-size: 23px;
-    color: #fff;
-  }
-  .slick-prev {
-    right: 60px;
-    background-color: #474a4e;
-  }
-  .slick-next {
-    right: 15px;
-    background-color: #3c3f43;
-  }
-}

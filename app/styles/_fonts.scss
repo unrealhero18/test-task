@@ -1,9 +1,9 @@
 @font-face {
   font-family: 'icons';
   src:
-    url('../fonts/icons.ttf?r7afjb') format('truetype'),
-    url('../fonts/icons.woff?r7afjb') format('woff'),
-    url('../fonts/icons.svg?r7afjb#icons') format('svg');
+    url('../fonts/icons.ttf?h1lrb8') format('truetype'),
+    url('../fonts/icons.woff?h1lrb8') format('woff'),
+    url('../fonts/icons.svg?h1lrb8#icons') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -20,6 +20,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-play:before {
+  content: "\e915";
+}
 .icon-dislike:before {
   content: "\e913";
 }
@@ -83,7 +86,6 @@
 .icon-arrow-bottom:before {
   content: "\e900";
 }
-
 
 
 // Proxima Nova

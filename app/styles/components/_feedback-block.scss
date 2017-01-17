@@ -43,7 +43,7 @@
   padding-top: 4px;
 }
 
-.feedback-block__expand-trigger {
+.feedback-block__inner-expand-trigger {
   display: block;
   margin-bottom: 13px;
 }
@@ -136,4 +136,9 @@
   .rating__icon {
     font-size: 12px;
   }
+}
+
+.feedback-block__expand-trigger {
+  display: inline-block;
+  margin-top: 18px;
 }

@@ -285,7 +285,7 @@
                   <div class="product__preview-slide">
                     <a
                       href="images/products/1.jpg"
-                      class="product__preview-slide-link js-modal-image"
+                      class="product__preview-slide-link js-product-modal"
                       title="Большое превью «MOBIL Super 3000 X1 5W-40, 4л»">
                       <img
                         src="images/products/1.jpg"
@@ -297,7 +297,7 @@
                   <div class="product__preview-slide">
                     <a
                       href="images/products/2.jpg"
-                      class="product__preview-slide-link js-modal-image"
+                      class="product__preview-slide-link js-product-modal"
                       title="Большое превью «MOBIL Super 3000 X1 5W-40, 4л»">
                       <img
                         src="images/products/2.jpg"
@@ -309,7 +309,7 @@
                   <div class="product__preview-slide">
                     <a
                       href="images/products/3.jpg"
-                      class="product__preview-slide-link js-modal-image"
+                      class="product__preview-slide-link js-product-modal"
                       title="Большое превью «MOBIL Super 3000 X1 5W-40, 4л»">
                       <img
                         src="images/products/3.jpg"
@@ -321,7 +321,7 @@
                   <div class="product__preview-slide">
                     <a
                       href="images/products/4.jpg"
-                      class="product__preview-slide-link js-modal-image"
+                      class="product__preview-slide-link js-product-modal"
                       title="Большое превью «MOBIL Super 3000 X1 5W-40, 4л»">
                       <img
                         src="images/products/4.jpg"
@@ -333,7 +333,7 @@
                   <div class="product__preview-slide">
                     <a
                       href="images/products/5.jpg"
-                      class="product__preview-slide-link js-modal-image"
+                      class="product__preview-slide-link js-product-modal"
                       title="Большое превью «MOBIL Super 3000 X1 5W-40, 4л»">
                       <img
                         src="images/products/5.jpg"
@@ -370,7 +370,7 @@
                 </div>
 
                 <div class="clearfix">
-                  <div class="product__order product-order">
+                  <div class="product-order product__order">
                     <p class="product-order__price">456 <small class="product-order__price-currency">грн</small></p>
 
                     <button class="product-order__btn btn btn_bordered btn_danger btn_lg btn_block btn_bold">Сообщить о поступлении</button>
@@ -392,7 +392,7 @@
                     </div>
                   </div>
 
-                  <div class="product__similar product-similar">
+                  <div class="product-similar product__similar">
                     <h3 class="product-similar__title">Похожий товар</h3>
 
                     <a href="javascript:void(0);" class="product-similar__img-wrap" title="Миниатюра «CASTRO Manual EP 80W-90 1л»">
@@ -436,7 +436,7 @@
       <div class="container">
         <h2 class="products-similar__title">Похожие товары</h2>
 
-        <div class="products-similar__facing row js-many-products-slider">
+        <div class="products-similar__facing slick-arrows slick-arrows_normal row js-many-products-slider">
           <div class="product-cell col-sm-2">
             <a href="javascript:void(0);" class="product-cell__img-wrap" title="Миниатюра «Castrol Magnatec 10W-40 A3/B4 4 л»">
               <span class="product-cell__discount">Скидка -10%</span>
@@ -887,401 +887,535 @@
               </a>
             </section>
 
-            <div class="product-extra__section js-expand-container" id="feedback">
+            <div class="product-extra__section js-expand-container js-tab-container" id="feedback">
               <div class="product-extra__feedback-actions">
                 <div class="product-extra__feedback-actions-left">
-                  <button type="button" class="product-extra__feedback-tab-trigger active">
+                  <button
+                    type="button"
+                    data-tab-index="0"
+                    class="product-extra__feedback-tab-trigger js-tab-trigger active">
                     Отзывы (10)
                   </button>
 
-                  <button type="button" class="product-extra__feedback-tab-trigger">
+                  <button
+                    type="button"
+                    data-tab-index="1"
+                    class="product-extra__feedback-tab-trigger js-tab-trigger">
                     Вопросы (7)
                   </button>
                 </div>
 
                 <div class="product-extra__feedback-actions-right">
-                  <button type="button" class="btn btn_warning btn_md btn_bold">Оставить отзыв</button>
-                </div>
-              </div>
-
-              <div class="product-extra__feedback-data">
-                <div class="feedback-block feedback-block_first">
-                  <div class="feedback-block__wrap">
-                    <div class="feedback-block__content">
-                      <header class="feedback-block__info">
-                        <span class="feedback-block__author">Владимир</span>
-                        <time class="feedback-block__pubdate">04.07.2016</time>
-                      </header>
-
-                      <p class="feedback-block__text">
-                        У Huawei краща основна камера ніж в Lenovo при тому, що Lenovo ніколи не були сильні в плані фото, а також у y6 pro кращий процесор (вища частота) і, як кажуть, краща оптимізація, що позитивно впливає на тривалість роботи. До того ж, мені здається, що у Huawei менше проблем по якості ніж у Lenovo. Захист від бризг у Р1m є скоріше
-                      </p>
-
-                      <div class="feedback-block__values">
-                        <p class="feedback-block__value feedback-block__value_success">
-                          <strong class="feedback-block__value-label">Достоинства:</strong> хорошая батарея, и вообще неплохой смартфон
-                        </p>
-
-                        <p class="feedback-block__value feedback-block__value_danger">
-                          <strong class="feedback-block__value-label">Недостатки:</strong> не обнаружены
-                        </p>
-                      </div>
-
-                      <footer class="feedback-block__actions">
-                        <div class="feedback-block__actions-left">
-                          <a href="javascript:void(0);" class="feedback-block__action-answers">1 ответ</a>
-                          <a href="javascript:void(0);" class="feedback-block__action-answers">Ответить</a>
-                        </div>
-
-                        <div class="feedback-block__actions-right">
-                          <span class="feedback-block__action-label">Был ли вам полезен этот отзыв:</span>
-
-                          <a href="javascript:void(0);" class="feedback-block__action-finger feedback-block__action-finger_up">
-                            <span class="feedback-block__action-finger-icon icon icon-like"></span>
-                            <span class="feedback-block__action-finger-count">14</span>
-                          </a>
-
-                          <a href="javascript:void(0);" class="feedback-block__action-finger feedback-block__action-finger_down">
-                            <span class="feedback-block__action-finger-icon icon icon-dislike"></span>
-                            <span class="feedback-block__action-finger-count">3</span>
-                          </a>
-                        </div>
-                      </footer>
-                    </div>
-
-                    <div class="feedback-block__mark">
-                      <h4 class="feedback-block__mark-title">Оценка</h4>
-
-                      <span class="feedback-block__mark-rating rating">
-                        <span class="rating__icon icon icon-star"></span>
-                        <span class="rating__icon icon icon-star"></span>
-                        <span class="rating__icon icon icon-star"></span>
-                        <span class="rating__icon icon icon-star rating__icon_mark"></span>
-                        <span class="rating__icon icon icon-star"></span>
-                        <span class="rating__score">4,0</span>
-                      </span>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="feedback-block">
-                  <div class="feedback-block__wrap">
-                    <div class="feedback-block__content js-expand-container">
-                      <header class="feedback-block__info">
-                        <span class="feedback-block__author">Панас</span>
-                        <time class="feedback-block__pubdate">04.07.2016</time>
-                      </header>
-
-                      <p class="feedback-block__text js-expand-data">
-                        У Huawei краща основна камера ніж в Lenovo при тому, що Lenovo ніколи не були сильні в плані фото, а також у y6 pro кращий процесор (вища частота) і, як кажуть, краща оптимізація, що позитивно впливає на тривалість роботи. До того ж, мені здається, що у Huawei менше проблем по якості ніж у Lenovo. Захист від бризг у Р1m є скоріше рекламним трюком ніж реальним захистом та і потреба в ньому виникає не часто.
-                      </p>
-
-                      <a
-                        href="javascript:void(0);"
-                        class="feedback-block__expand-trigger product-extra__expand-trigger js-expand-trigger"
-                        data-text-hide="Убрать"
-                        data-text-show="Читать полностью">
-                        <span class="product-extra__expand-icon icon icon-arrow-bottom"></span>
-                        <span class="product-extra__expand-caption js-expand-text">Читать полностью</span>
-                      </a>
-
-                      <div class="feedback-block__values">
-                        <p class="feedback-block__value feedback-block__value_success">
-                          <strong class="feedback-block__value-label">Достоинства:</strong> хорошая батарея, и вообще неплохой смартфон
-                        </p>
-
-                        <p class="feedback-block__value feedback-block__value_danger">
-                          <strong class="feedback-block__value-label">Недостатки:</strong> не обнаружены
-                        </p>
-                      </div>
-
-                      <footer class="feedback-block__actions">
-                        <div class="feedback-block__actions-left">
-                          <a href="javascript:void(0);" class="feedback-block__action-answers">1 ответ</a>
-                          <a href="javascript:void(0);" class="feedback-block__action-answers">Ответить</a>
-                        </div>
-
-                        <div class="feedback-block__actions-right">
-                          <span class="feedback-block__action-label">Был ли вам полезен этот отзыв:</span>
-
-                          <a href="javascript:void(0);" class="feedback-block__action-finger feedback-block__action-finger_up">
-                            <span class="feedback-block__action-finger-icon icon icon-like"></span>
-                            <span class="feedback-block__action-finger-count">14</span>
-                          </a>
-
-                          <a href="javascript:void(0);" class="feedback-block__action-finger feedback-block__action-finger_down">
-                            <span class="feedback-block__action-finger-icon icon icon-dislike"></span>
-                            <span class="feedback-block__action-finger-count">3</span>
-                          </a>
-                        </div>
-                      </footer>
-                    </div>
-
-                    <div class="feedback-block__mark">
-                      <h4 class="feedback-block__mark-title">Оценка</h4>
-
-                      <span class="feedback-block__mark-rating rating">
-                        <span class="rating__icon icon icon-star"></span>
-                        <span class="rating__icon icon icon-star"></span>
-                        <span class="rating__icon icon icon-star rating__icon_mark"></span>
-                        <span class="rating__icon icon icon-star"></span>
-                        <span class="rating__icon icon icon-star"></span>
-                        <span class="rating__score">3,0</span>
-                      </span>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="feedback-block">
-                  <div class="feedback-block__wrap">
-                    <div class="feedback-block__content">
-                      <header class="feedback-block__info">
-                        <span class="feedback-block__author">Анастасия</span>
-                        <time class="feedback-block__pubdate">04.07.2016</time>
-                      </header>
-
-                      <p class="feedback-block__text">
-                        У Huawei краща основна камера ніж в Lenovo при тому, що Lenovo ніколи не були сильні в плані фото, а також у y6 pro кращий процесор (вища частота) і, як кажуть, краща оптимізація, що позитивно впливає на тривалість роботи. До того ж, мені здається, що у Huawei менше проблем по якості ніж у Lenovo. Захист від бризг у Р1m є скоріше
-                      </p>
-
-                      <footer class="feedback-block__actions">
-                        <div class="feedback-block__actions-left">
-                          <a href="javascript:void(0);" class="feedback-block__action-answers">1 ответ</a>
-                          <a href="javascript:void(0);" class="feedback-block__action-answers">Ответить</a>
-                        </div>
-
-                        <div class="feedback-block__actions-right">
-                          <span class="feedback-block__action-label">Был ли вам полезен этот отзыв:</span>
-
-                          <a href="javascript:void(0);" class="feedback-block__action-finger feedback-block__action-finger_up">
-                            <span class="feedback-block__action-finger-icon icon icon-like"></span>
-                            <span class="feedback-block__action-finger-count">14</span>
-                          </a>
-
-                          <a href="javascript:void(0);" class="feedback-block__action-finger feedback-block__action-finger_down">
-                            <span class="feedback-block__action-finger-icon icon icon-dislike"></span>
-                            <span class="feedback-block__action-finger-count">3</span>
-                          </a>
-                        </div>
-                      </footer>
-                    </div>
-
-                    <div class="feedback-block__mark">
-                      <h4 class="feedback-block__mark-title">Оценка</h4>
-
-                      <span class="feedback-block__mark-rating rating">
-                        <span class="rating__icon icon icon-star"></span>
-                        <span class="rating__icon icon icon-star"></span>
-                        <span class="rating__icon icon icon-star"></span>
-                        <span class="rating__icon icon icon-star"></span>
-                        <span class="rating__icon icon icon-star"></span>
-                        <span class="rating__score">5,0</span>
-                      </span>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="expand-data js-expand-data">
-                  <div class="feedback-block">
-                    <div class="feedback-block__wrap">
-                      <div class="feedback-block__content">
-                        <header class="feedback-block__info">
-                          <span class="feedback-block__author">Владимир</span>
-                          <time class="feedback-block__pubdate">04.07.2016</time>
-                        </header>
-
-                        <p class="feedback-block__text">
-                          У Huawei краща основна камера ніж в Lenovo при тому, що Lenovo ніколи не були сильні в плані фото, а також у y6 pro кращий процесор (вища частота) і, як кажуть, краща оптимізація, що позитивно впливає на тривалість роботи. До того ж, мені здається, що у Huawei менше проблем по якості ніж у Lenovo. Захист від бризг у Р1m є скоріше
-                        </p>
-
-                        <div class="feedback-block__values">
-                          <p class="feedback-block__value feedback-block__value_success">
-                            <strong class="feedback-block__value-label">Достоинства:</strong> хорошая батарея, и вообще неплохой смартфон
-                          </p>
-
-                          <p class="feedback-block__value feedback-block__value_danger">
-                            <strong class="feedback-block__value-label">Недостатки:</strong> не обнаружены
-                          </p>
-                        </div>
-
-                        <footer class="feedback-block__actions">
-                          <div class="feedback-block__actions-left">
-                            <a href="javascript:void(0);" class="feedback-block__action-answers">1 ответ</a>
-                            <a href="javascript:void(0);" class="feedback-block__action-answers">Ответить</a>
-                          </div>
-
-                          <div class="feedback-block__actions-right">
-                            <span class="feedback-block__action-label">Был ли вам полезен этот отзыв:</span>
-
-                            <a href="javascript:void(0);" class="feedback-block__action-finger feedback-block__action-finger_up">
-                              <span class="feedback-block__action-finger-icon icon icon-like"></span>
-                              <span class="feedback-block__action-finger-count">14</span>
-                            </a>
-
-                            <a href="javascript:void(0);" class="feedback-block__action-finger feedback-block__action-finger_down">
-                              <span class="feedback-block__action-finger-icon icon icon-dislike"></span>
-                              <span class="feedback-block__action-finger-count">3</span>
-                            </a>
-                          </div>
-                        </footer>
-                      </div>
-
-                      <div class="feedback-block__mark">
-                        <h4 class="feedback-block__mark-title">Оценка</h4>
-
-                        <span class="feedback-block__mark-rating rating">
-                          <span class="rating__icon icon icon-star"></span>
-                          <span class="rating__icon icon icon-star"></span>
-                          <span class="rating__icon icon icon-star"></span>
-                          <span class="rating__icon icon icon-star rating__icon_mark"></span>
-                          <span class="rating__icon icon icon-star"></span>
-                          <span class="rating__score">4,0</span>
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="feedback-block">
-                    <div class="feedback-block__wrap">
-                      <div class="feedback-block__content">
-                        <header class="feedback-block__info">
-                          <span class="feedback-block__author">Владимир</span>
-                          <time class="feedback-block__pubdate">04.07.2016</time>
-                        </header>
-
-                        <p class="feedback-block__text">
-                          У Huawei краща основна камера ніж в Lenovo при тому, що Lenovo ніколи не були сильні в плані фото, а також у y6 pro кращий процесор (вища частота) і, як кажуть, краща оптимізація, що позитивно впливає на тривалість роботи. До того ж, мені здається, що у Huawei менше проблем по якості ніж у Lenovo. Захист від бризг у Р1m є скоріше
-                        </p>
-
-                        <div class="feedback-block__values">
-                          <p class="feedback-block__value feedback-block__value_success">
-                            <strong class="feedback-block__value-label">Достоинства:</strong> хорошая батарея, и вообще неплохой смартфон
-                          </p>
-
-                          <p class="feedback-block__value feedback-block__value_danger">
-                            <strong class="feedback-block__value-label">Недостатки:</strong> не обнаружены
-                          </p>
-                        </div>
-
-                        <footer class="feedback-block__actions">
-                          <div class="feedback-block__actions-left">
-                            <a href="javascript:void(0);" class="feedback-block__action-answers">1 ответ</a>
-                            <a href="javascript:void(0);" class="feedback-block__action-answers">Ответить</a>
-                          </div>
-
-                          <div class="feedback-block__actions-right">
-                            <span class="feedback-block__action-label">Был ли вам полезен этот отзыв:</span>
-
-                            <a href="javascript:void(0);" class="feedback-block__action-finger feedback-block__action-finger_up">
-                              <span class="feedback-block__action-finger-icon icon icon-like"></span>
-                              <span class="feedback-block__action-finger-count">14</span>
-                            </a>
-
-                            <a href="javascript:void(0);" class="feedback-block__action-finger feedback-block__action-finger_down">
-                              <span class="feedback-block__action-finger-icon icon icon-dislike"></span>
-                              <span class="feedback-block__action-finger-count">3</span>
-                            </a>
-                          </div>
-                        </footer>
-                      </div>
-
-                      <div class="feedback-block__mark">
-                        <h4 class="feedback-block__mark-title">Оценка</h4>
-
-                        <span class="feedback-block__mark-rating rating">
-                          <span class="rating__icon icon icon-star"></span>
-                          <span class="rating__icon icon icon-star"></span>
-                          <span class="rating__icon icon icon-star"></span>
-                          <span class="rating__icon icon icon-star rating__icon_mark"></span>
-                          <span class="rating__icon icon icon-star"></span>
-                          <span class="rating__score">4,0</span>
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="feedback-block">
-                    <div class="feedback-block__wrap">
-                      <div class="feedback-block__content">
-                        <header class="feedback-block__info">
-                          <span class="feedback-block__author">Владимир</span>
-                          <time class="feedback-block__pubdate">04.07.2016</time>
-                        </header>
-
-                        <p class="feedback-block__text">
-                          У Huawei краща основна камера ніж в Lenovo при тому, що Lenovo ніколи не були сильні в плані фото, а також у y6 pro кращий процесор (вища частота) і, як кажуть, краща оптимізація, що позитивно впливає на тривалість роботи. До того ж, мені здається, що у Huawei менше проблем по якості ніж у Lenovo. Захист від бризг у Р1m є скоріше
-                        </p>
-
-                        <div class="feedback-block__values">
-                          <p class="feedback-block__value feedback-block__value_success">
-                            <strong class="feedback-block__value-label">Достоинства:</strong> хорошая батарея, и вообще неплохой смартфон
-                          </p>
-
-                          <p class="feedback-block__value feedback-block__value_danger">
-                            <strong class="feedback-block__value-label">Недостатки:</strong> не обнаружены
-                          </p>
-                        </div>
-
-                        <footer class="feedback-block__actions">
-                          <div class="feedback-block__actions-left">
-                            <a href="javascript:void(0);" class="feedback-block__action-answers">1 ответ</a>
-                            <a href="javascript:void(0);" class="feedback-block__action-answers">Ответить</a>
-                          </div>
-
-                          <div class="feedback-block__actions-right">
-                            <span class="feedback-block__action-label">Был ли вам полезен этот отзыв:</span>
-
-                            <a href="javascript:void(0);" class="feedback-block__action-finger feedback-block__action-finger_up">
-                              <span class="feedback-block__action-finger-icon icon icon-like"></span>
-                              <span class="feedback-block__action-finger-count">14</span>
-                            </a>
-
-                            <a href="javascript:void(0);" class="feedback-block__action-finger feedback-block__action-finger_down">
-                              <span class="feedback-block__action-finger-icon icon icon-dislike"></span>
-                              <span class="feedback-block__action-finger-count">3</span>
-                            </a>
-                          </div>
-                        </footer>
-                      </div>
-
-                      <div class="feedback-block__mark">
-                        <h4 class="feedback-block__mark-title">Оценка</h4>
-
-                        <span class="feedback-block__mark-rating rating">
-                          <span class="rating__icon icon icon-star"></span>
-                          <span class="rating__icon icon icon-star"></span>
-                          <span class="rating__icon icon icon-star"></span>
-                          <span class="rating__icon icon icon-star rating__icon_mark"></span>
-                          <span class="rating__icon icon icon-star"></span>
-                          <span class="rating__score">4,0</span>
-                        </span>
-                      </div>
-                    </div>
+                  <div class="tabs-data js-tabs-data">
+                    <button type="button" class="btn btn_warning btn_md btn_bold active">Оставить отзыв</button>
+                    <button type="button" class="btn btn_warning btn_md btn_bold">Задать вопрос</button>
                   </div>
                 </div>
               </div>
 
-              <a
-                href="javascript:void(0);"
-                class="product-extra__expand-trigger js-expand-trigger"
-                data-text-hide="Скрыть все отзывы"
-                data-text-show="Показать все отзывы">
-                <span class="product-extra__expand-icon icon icon-arrow-bottom"></span>
-                <span class="product-extra__expand-caption js-expand-text">Показать все отзывы</span>
-              </a>
+              <div class="tabs-data js-tabs-data">
+                <div class="product-extra__feedback-data active">
+                  <div class="feedback-block feedback-block_first">
+                    <div class="feedback-block__wrap">
+                      <div class="feedback-block__content">
+                        <header class="feedback-block__info">
+                          <span class="feedback-block__author">Владимир</span>
+                          <time class="feedback-block__pubdate">04.07.2016</time>
+                        </header>
+
+                        <p class="feedback-block__text">
+                          У Huawei краща основна камера ніж в Lenovo при тому, що Lenovo ніколи не були сильні в плані фото, а також у y6 pro кращий процесор (вища частота) і, як кажуть, краща оптимізація, що позитивно впливає на тривалість роботи. До того ж, мені здається, що у Huawei менше проблем по якості ніж у Lenovo. Захист від бризг у Р1m є скоріше
+                        </p>
+
+                        <div class="feedback-block__values">
+                          <p class="feedback-block__value feedback-block__value_success">
+                            <strong class="feedback-block__value-label">Достоинства:</strong> хорошая батарея, и вообще неплохой смартфон
+                          </p>
+
+                          <p class="feedback-block__value feedback-block__value_danger">
+                            <strong class="feedback-block__value-label">Недостатки:</strong> не обнаружены
+                          </p>
+                        </div>
+
+                        <footer class="feedback-block__actions">
+                          <div class="feedback-block__actions-left">
+                            <a href="javascript:void(0);" class="feedback-block__action-answers">1 ответ</a>
+                            <a href="javascript:void(0);" class="feedback-block__action-answers">Ответить</a>
+                          </div>
+
+                          <div class="feedback-block__actions-right">
+                            <span class="feedback-block__action-label">Был ли вам полезен этот отзыв:</span>
+
+                            <a href="javascript:void(0);" class="feedback-block__action-finger feedback-block__action-finger_up">
+                              <span class="feedback-block__action-finger-icon icon icon-like"></span>
+                              <span class="feedback-block__action-finger-count">14</span>
+                            </a>
+
+                            <a href="javascript:void(0);" class="feedback-block__action-finger feedback-block__action-finger_down">
+                              <span class="feedback-block__action-finger-icon icon icon-dislike"></span>
+                              <span class="feedback-block__action-finger-count">3</span>
+                            </a>
+                          </div>
+                        </footer>
+                      </div>
+
+                      <div class="feedback-block__mark">
+                        <h4 class="feedback-block__mark-title">Оценка</h4>
+
+                        <span class="feedback-block__mark-rating rating">
+                          <span class="rating__icon icon icon-star"></span>
+                          <span class="rating__icon icon icon-star"></span>
+                          <span class="rating__icon icon icon-star"></span>
+                          <span class="rating__icon icon icon-star rating__icon_mark"></span>
+                          <span class="rating__icon icon icon-star"></span>
+                          <span class="rating__score">4,0</span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="feedback-block">
+                    <div class="feedback-block__wrap">
+                      <div class="feedback-block__content js-expand-container">
+                        <header class="feedback-block__info">
+                          <span class="feedback-block__author">Панас</span>
+                          <time class="feedback-block__pubdate">04.07.2016</time>
+                        </header>
+
+                        <p class="feedback-block__text js-expand-data">
+                          У Huawei краща основна камера ніж в Lenovo при тому, що Lenovo ніколи не були сильні в плані фото, а також у y6 pro кращий процесор (вища частота) і, як кажуть, краща оптимізація, що позитивно впливає на тривалість роботи. До того ж, мені здається, що у Huawei менше проблем по якості ніж у Lenovo. Захист від бризг у Р1m є скоріше рекламним трюком ніж реальним захистом та і потреба в ньому виникає не часто.
+                        </p>
+
+                        <a
+                          href="javascript:void(0);"
+                          class="feedback-block__inner-expand-trigger product-extra__expand-trigger js-expand-trigger"
+                          data-text-hide="Убрать"
+                          data-text-show="Читать полностью">
+                          <span class="product-extra__expand-icon icon icon-arrow-bottom"></span>
+                          <span class="product-extra__expand-caption js-expand-text">Читать полностью</span>
+                        </a>
+
+                        <div class="feedback-block__values">
+                          <p class="feedback-block__value feedback-block__value_success">
+                            <strong class="feedback-block__value-label">Достоинства:</strong> хорошая батарея, и вообще неплохой смартфон
+                          </p>
+
+                          <p class="feedback-block__value feedback-block__value_danger">
+                            <strong class="feedback-block__value-label">Недостатки:</strong> не обнаружены
+                          </p>
+                        </div>
+
+                        <footer class="feedback-block__actions">
+                          <div class="feedback-block__actions-left">
+                            <a href="javascript:void(0);" class="feedback-block__action-answers">1 ответ</a>
+                            <a href="javascript:void(0);" class="feedback-block__action-answers">Ответить</a>
+                          </div>
+
+                          <div class="feedback-block__actions-right">
+                            <span class="feedback-block__action-label">Был ли вам полезен этот отзыв:</span>
+
+                            <a href="javascript:void(0);" class="feedback-block__action-finger feedback-block__action-finger_up">
+                              <span class="feedback-block__action-finger-icon icon icon-like"></span>
+                              <span class="feedback-block__action-finger-count">14</span>
+                            </a>
+
+                            <a href="javascript:void(0);" class="feedback-block__action-finger feedback-block__action-finger_down">
+                              <span class="feedback-block__action-finger-icon icon icon-dislike"></span>
+                              <span class="feedback-block__action-finger-count">3</span>
+                            </a>
+                          </div>
+                        </footer>
+                      </div>
+
+                      <div class="feedback-block__mark">
+                        <h4 class="feedback-block__mark-title">Оценка</h4>
+
+                        <span class="feedback-block__mark-rating rating">
+                          <span class="rating__icon icon icon-star"></span>
+                          <span class="rating__icon icon icon-star"></span>
+                          <span class="rating__icon icon icon-star rating__icon_mark"></span>
+                          <span class="rating__icon icon icon-star"></span>
+                          <span class="rating__icon icon icon-star"></span>
+                          <span class="rating__score">3,0</span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="feedback-block">
+                    <div class="feedback-block__wrap">
+                      <div class="feedback-block__content">
+                        <header class="feedback-block__info">
+                          <span class="feedback-block__author">Анастасия</span>
+                          <time class="feedback-block__pubdate">04.07.2016</time>
+                        </header>
+
+                        <p class="feedback-block__text">
+                          У Huawei краща основна камера ніж в Lenovo при тому, що Lenovo ніколи не були сильні в плані фото, а також у y6 pro кращий процесор (вища частота) і, як кажуть, краща оптимізація, що позитивно впливає на тривалість роботи. До того ж, мені здається, що у Huawei менше проблем по якості ніж у Lenovo. Захист від бризг у Р1m є скоріше
+                        </p>
+
+                        <footer class="feedback-block__actions">
+                          <div class="feedback-block__actions-left">
+                            <a href="javascript:void(0);" class="feedback-block__action-answers">1 ответ</a>
+                            <a href="javascript:void(0);" class="feedback-block__action-answers">Ответить</a>
+                          </div>
+
+                          <div class="feedback-block__actions-right">
+                            <span class="feedback-block__action-label">Был ли вам полезен этот отзыв:</span>
+
+                            <a href="javascript:void(0);" class="feedback-block__action-finger feedback-block__action-finger_up">
+                              <span class="feedback-block__action-finger-icon icon icon-like"></span>
+                              <span class="feedback-block__action-finger-count">14</span>
+                            </a>
+
+                            <a href="javascript:void(0);" class="feedback-block__action-finger feedback-block__action-finger_down">
+                              <span class="feedback-block__action-finger-icon icon icon-dislike"></span>
+                              <span class="feedback-block__action-finger-count">3</span>
+                            </a>
+                          </div>
+                        </footer>
+                      </div>
+
+                      <div class="feedback-block__mark">
+                        <h4 class="feedback-block__mark-title">Оценка</h4>
+
+                        <span class="feedback-block__mark-rating rating">
+                          <span class="rating__icon icon icon-star"></span>
+                          <span class="rating__icon icon icon-star"></span>
+                          <span class="rating__icon icon icon-star"></span>
+                          <span class="rating__icon icon icon-star"></span>
+                          <span class="rating__icon icon icon-star"></span>
+                          <span class="rating__score">5,0</span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="expand-data js-expand-data">
+                    <div class="feedback-block">
+                      <div class="feedback-block__wrap">
+                        <div class="feedback-block__content">
+                          <header class="feedback-block__info">
+                            <span class="feedback-block__author">Владимир</span>
+                            <time class="feedback-block__pubdate">04.07.2016</time>
+                          </header>
+
+                          <p class="feedback-block__text">
+                            У Huawei краща основна камера ніж в Lenovo при тому, що Lenovo ніколи не були сильні в плані фото, а також у y6 pro кращий процесор (вища частота) і, як кажуть, краща оптимізація, що позитивно впливає на тривалість роботи. До того ж, мені здається, що у Huawei менше проблем по якості ніж у Lenovo. Захист від бризг у Р1m є скоріше
+                          </p>
+
+                          <div class="feedback-block__values">
+                            <p class="feedback-block__value feedback-block__value_success">
+                              <strong class="feedback-block__value-label">Достоинства:</strong> хорошая батарея, и вообще неплохой смартфон
+                            </p>
+
+                            <p class="feedback-block__value feedback-block__value_danger">
+                              <strong class="feedback-block__value-label">Недостатки:</strong> не обнаружены
+                            </p>
+                          </div>
+
+                          <footer class="feedback-block__actions">
+                            <div class="feedback-block__actions-left">
+                              <a href="javascript:void(0);" class="feedback-block__action-answers">1 ответ</a>
+                              <a href="javascript:void(0);" class="feedback-block__action-answers">Ответить</a>
+                            </div>
+
+                            <div class="feedback-block__actions-right">
+                              <span class="feedback-block__action-label">Был ли вам полезен этот отзыв:</span>
+
+                              <a href="javascript:void(0);" class="feedback-block__action-finger feedback-block__action-finger_up">
+                                <span class="feedback-block__action-finger-icon icon icon-like"></span>
+                                <span class="feedback-block__action-finger-count">14</span>
+                              </a>
+
+                              <a href="javascript:void(0);" class="feedback-block__action-finger feedback-block__action-finger_down">
+                                <span class="feedback-block__action-finger-icon icon icon-dislike"></span>
+                                <span class="feedback-block__action-finger-count">3</span>
+                              </a>
+                            </div>
+                          </footer>
+                        </div>
+
+                        <div class="feedback-block__mark">
+                          <h4 class="feedback-block__mark-title">Оценка</h4>
+
+                          <span class="feedback-block__mark-rating rating">
+                            <span class="rating__icon icon icon-star"></span>
+                            <span class="rating__icon icon icon-star"></span>
+                            <span class="rating__icon icon icon-star"></span>
+                            <span class="rating__icon icon icon-star rating__icon_mark"></span>
+                            <span class="rating__icon icon icon-star"></span>
+                            <span class="rating__score">4,0</span>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="feedback-block">
+                      <div class="feedback-block__wrap">
+                        <div class="feedback-block__content">
+                          <header class="feedback-block__info">
+                            <span class="feedback-block__author">Владимир</span>
+                            <time class="feedback-block__pubdate">04.07.2016</time>
+                          </header>
+
+                          <p class="feedback-block__text">
+                            У Huawei краща основна камера ніж в Lenovo при тому, що Lenovo ніколи не були сильні в плані фото, а також у y6 pro кращий процесор (вища частота) і, як кажуть, краща оптимізація, що позитивно впливає на тривалість роботи. До того ж, мені здається, що у Huawei менше проблем по якості ніж у Lenovo. Захист від бризг у Р1m є скоріше
+                          </p>
+
+                          <div class="feedback-block__values">
+                            <p class="feedback-block__value feedback-block__value_success">
+                              <strong class="feedback-block__value-label">Достоинства:</strong> хорошая батарея, и вообще неплохой смартфон
+                            </p>
+
+                            <p class="feedback-block__value feedback-block__value_danger">
+                              <strong class="feedback-block__value-label">Недостатки:</strong> не обнаружены
+                            </p>
+                          </div>
+
+                          <footer class="feedback-block__actions">
+                            <div class="feedback-block__actions-left">
+                              <a href="javascript:void(0);" class="feedback-block__action-answers">1 ответ</a>
+                              <a href="javascript:void(0);" class="feedback-block__action-answers">Ответить</a>
+                            </div>
+
+                            <div class="feedback-block__actions-right">
+                              <span class="feedback-block__action-label">Был ли вам полезен этот отзыв:</span>
+
+                              <a href="javascript:void(0);" class="feedback-block__action-finger feedback-block__action-finger_up">
+                                <span class="feedback-block__action-finger-icon icon icon-like"></span>
+                                <span class="feedback-block__action-finger-count">14</span>
+                              </a>
+
+                              <a href="javascript:void(0);" class="feedback-block__action-finger feedback-block__action-finger_down">
+                                <span class="feedback-block__action-finger-icon icon icon-dislike"></span>
+                                <span class="feedback-block__action-finger-count">3</span>
+                              </a>
+                            </div>
+                          </footer>
+                        </div>
+
+                        <div class="feedback-block__mark">
+                          <h4 class="feedback-block__mark-title">Оценка</h4>
+
+                          <span class="feedback-block__mark-rating rating">
+                            <span class="rating__icon icon icon-star"></span>
+                            <span class="rating__icon icon icon-star"></span>
+                            <span class="rating__icon icon icon-star"></span>
+                            <span class="rating__icon icon icon-star rating__icon_mark"></span>
+                            <span class="rating__icon icon icon-star"></span>
+                            <span class="rating__score">4,0</span>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="feedback-block">
+                      <div class="feedback-block__wrap">
+                        <div class="feedback-block__content">
+                          <header class="feedback-block__info">
+                            <span class="feedback-block__author">Владимир</span>
+                            <time class="feedback-block__pubdate">04.07.2016</time>
+                          </header>
+
+                          <p class="feedback-block__text">
+                            У Huawei краща основна камера ніж в Lenovo при тому, що Lenovo ніколи не були сильні в плані фото, а також у y6 pro кращий процесор (вища частота) і, як кажуть, краща оптимізація, що позитивно впливає на тривалість роботи. До того ж, мені здається, що у Huawei менше проблем по якості ніж у Lenovo. Захист від бризг у Р1m є скоріше
+                          </p>
+
+                          <div class="feedback-block__values">
+                            <p class="feedback-block__value feedback-block__value_success">
+                              <strong class="feedback-block__value-label">Достоинства:</strong> хорошая батарея, и вообще неплохой смартфон
+                            </p>
+
+                            <p class="feedback-block__value feedback-block__value_danger">
+                              <strong class="feedback-block__value-label">Недостатки:</strong> не обнаружены
+                            </p>
+                          </div>
+
+                          <footer class="feedback-block__actions">
+                            <div class="feedback-block__actions-left">
+                              <a href="javascript:void(0);" class="feedback-block__action-answers">1 ответ</a>
+                              <a href="javascript:void(0);" class="feedback-block__action-answers">Ответить</a>
+                            </div>
+
+                            <div class="feedback-block__actions-right">
+                              <span class="feedback-block__action-label">Был ли вам полезен этот отзыв:</span>
+
+                              <a href="javascript:void(0);" class="feedback-block__action-finger feedback-block__action-finger_up">
+                                <span class="feedback-block__action-finger-icon icon icon-like"></span>
+                                <span class="feedback-block__action-finger-count">14</span>
+                              </a>
+
+                              <a href="javascript:void(0);" class="feedback-block__action-finger feedback-block__action-finger_down">
+                                <span class="feedback-block__action-finger-icon icon icon-dislike"></span>
+                                <span class="feedback-block__action-finger-count">3</span>
+                              </a>
+                            </div>
+                          </footer>
+                        </div>
+
+                        <div class="feedback-block__mark">
+                          <h4 class="feedback-block__mark-title">Оценка</h4>
+
+                          <span class="feedback-block__mark-rating rating">
+                            <span class="rating__icon icon icon-star"></span>
+                            <span class="rating__icon icon icon-star"></span>
+                            <span class="rating__icon icon icon-star"></span>
+                            <span class="rating__icon icon icon-star rating__icon_mark"></span>
+                            <span class="rating__icon icon icon-star"></span>
+                            <span class="rating__score">4,0</span>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <a
+                    href="javascript:void(0);"
+                    class="product-extra__expand-trigger feedback-block__expand-trigger js-expand-trigger"
+                    data-text-hide="Скрыть все отзывы"
+                    data-text-show="Показать все отзывы">
+                    <span class="product-extra__expand-icon icon icon-arrow-bottom"></span>
+                    <span class="product-extra__expand-caption js-expand-text">Показать все отзывы</span>
+                  </a>
+                </div>
+
+                <div class="product-extra__feedback-data">
+                  <p>Еще никто не задавал вопросов. Будьте первым!</p>
+                </div>
+              </div>
             </div>
 
             <section class="product-extra__section" id="video-reviews">
               <h4 class="product-extra__section-title">Видеообзоры (2)</h4>
+
+              <div class="video-gallery product-extra__video-gallery clearfix">
+                <div class="video-gallery__element">
+                  <img src="images/thumbs/thumb-video-1.jpg" class="video-gallery__thumb" alt="Превью для видеообзора">
+
+                  <a
+                    href="javascript:void(0);"
+                    role="button"
+                    data-yt-video="gOIusx-9DHs"
+                    class="video-gallery__play-btn js-video-play">
+                    <span class="video-gallery__play-icon icon icon-play"></span>
+                  </a>
+                </div>
+
+                <div class="video-gallery__element">
+                  <img src="images/thumbs/thumb-video-2.jpg" class="video-gallery__thumb" alt="Превью для видеообзора">
+
+                  <a
+                    href="javascript:void(0);"
+                    role="button"
+                    data-yt-video="Fqj5HgAa3vI"
+                    class="video-gallery__play-btn js-video-play">
+                    <span class="video-gallery__play-icon icon icon-play"></span>
+                  </a>
+                </div>
+              </div>
+            </section>
+
+
+            <section class="product-extra__section">
+              <h4 class="product-extra__section-title">Статьи (2)</h4>
+
+              <div class="articles-slider product-extra__articles-slider slick-arrows slick-arrows_full-height js-articles-slider">
+                <article class="articles-slider__slide clearfix">
+                  <div class="articles-slider__slide-img-wrap">
+                    <img src="images/articles/1.jpg" class="articles-slider__slide-img" alt="Фото к новости">
+                  </div>
+
+                  <div class="articles-slider__slide-content">
+                    <time class="articles-slider__slide-pubtime">16 августа 2016</time>
+
+                    <h3 class="articles-slider__slide-title">
+                      <a href="javascript:void(0);" class="articles-slider__slide-link">Подробный обзор и выявление недостатков навигатора DriveAssist 50LMT</a>
+                    </h3>
+
+                    <p class="articles-slider__slide-text">Современные технологии буквально с каждым днем все глубже и глубже загоняют в могилу некоторые автомобильные девайсы, взять к примеру GPS навигатор. Еще каких-то два-три ... года назад, он был одним из самых желаемых ... ююююююавто-гаджетов. А теперь достаточно скачать на смартфон бесплатную</p>
+                  </div>
+                </article>
+
+                <article class="articles-slider__slide clearfix">
+                  <div class="articles-slider__slide-img-wrap">
+                    <img src="images/articles/2.jpg" class="articles-slider__slide-img" alt="Фото к новости">
+                  </div>
+
+                  <div class="articles-slider__slide-content">
+                    <time class="articles-slider__slide-pubtime">16 августа 2016</time>
+
+                    <h3 class="articles-slider__slide-title">
+                      <a href="javascript:void(0);" class="articles-slider__slide-link">Подробный обзор и выявление недостатков навигатора DriveAssist 50LMT</a>
+                    </h3>
+
+                    <p class="articles-slider__slide-text">Современные технологии буквально с каждым днем все глубже и глубже загоняют в могилу некоторые автомобильные девайсы, взять к примеру GPS навигатор. Еще каких-то два-три ... года назад, он был одним из самых желаемых ... ююююююавто-гаджетов. А теперь достаточно скачать на смартфон бесплатную</p>
+                  </div>
+                </article>
+
+                <article class="articles-slider__slide clearfix">
+                  <div class="articles-slider__slide-img-wrap">
+                    <img src="images/articles/1.jpg" class="articles-slider__slide-img" alt="Фото к новости">
+                  </div>
+
+                  <div class="articles-slider__slide-content">
+                    <time class="articles-slider__slide-pubtime">16 августа 2016</time>
+
+                    <h3 class="articles-slider__slide-title">
+                      <a href="javascript:void(0);" class="articles-slider__slide-link">Подробный обзор и выявление недостатков навигатора DriveAssist 50LMT</a>
+                    </h3>
+
+                    <p class="articles-slider__slide-text">Современные технологии буквально с каждым днем все глубже и глубже загоняют в могилу некоторые автомобильные девайсы, взять к примеру GPS навигатор. Еще каких-то два-три ... года назад, он был одним из самых желаемых ... ююююююавто-гаджетов. А теперь достаточно скачать на смартфон бесплатную</p>
+                  </div>
+                </article>
+
+                <article class="articles-slider__slide clearfix">
+                  <div class="articles-slider__slide-img-wrap">
+                    <img src="images/articles/2.jpg" class="articles-slider__slide-img" alt="Фото к новости">
+                  </div>
+
+                  <div class="articles-slider__slide-content">
+                    <time class="articles-slider__slide-pubtime">16 августа 2016</time>
+
+                    <h3 class="articles-slider__slide-title">
+                      <a href="javascript:void(0);" class="articles-slider__slide-link">Подробный обзор и выявление недостатков навигатора DriveAssist 50LMT</a>
+                    </h3>
+
+                    <p class="articles-slider__slide-text">Современные технологии буквально с каждым днем все глубже и глубже загоняют в могилу некоторые автомобильные девайсы, взять к примеру GPS навигатор. Еще каких-то два-три ... года назад, он был одним из самых желаемых ... ююююююавто-гаджетов. А теперь достаточно скачать на смартфон бесплатную</p>
+                  </div>
+                </article>
+              </div>
             </section>
 
             <section class="product-extra__section" id="certifications">
               <h4 class="product-extra__section-title">Сертификаты соответствия</h4>
+
+              <div class="product-extra__certs-container">
+                <div class="product-extra__certs-row">
+                  <a href="images/certifications/1.jpg" class="product-extra__cert-link js-cert-modal">
+                    <img src="images/certifications/1.jpg" alt="Сертификаты соответствия" class="product-extra__cert-img">
+                  </a>
+
+                  <a href="images/certifications/2.jpg" class="product-extra__cert-link js-cert-modal">
+                    <img src="images/certifications/2.jpg" alt="Сертификаты соответствия" class="product-extra__cert-img">
+                  </a>
+
+                  <a href="images/certifications/3.jpg" class="product-extra__cert-link js-cert-modal">
+                    <img src="images/certifications/3.jpg" alt="Сертификаты соответствия" class="product-extra__cert-img">
+                  </a>
+
+                  <a href="images/certifications/4.jpg" class="product-extra__cert-link js-cert-modal">
+                    <img src="images/certifications/4.jpg" alt="Сертификаты соответствия" class="product-extra__cert-img">
+                  </a>
+                </div>
+              </div>
             </section>
           </div>
 
           <aside class="product-extra__sidebar">
-
+            <div class="product-suitable">
+              
+            </div>
           </aside>
         </div>
       </div>

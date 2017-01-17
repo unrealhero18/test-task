@@ -1,0 +1,43 @@
+.slick-arrows {
+  position: relative;
+  .slick-arrow {
+    position: absolute;
+    width: 45px;
+    border: 0;
+    font-size: 23px;
+    color: #fff;
+    z-index: 1;
+  }
+  .slick-prev {
+    background-color: #474a4e;
+  }
+  .slick-next {
+    background-color: #3c3f43;
+  }
+}
+
+.slick-arrows_normal {
+  .slick-arrow {
+    top: -57px;
+    height: 45px;
+  }
+  .slick-prev {
+    right: 60px;
+  }
+  .slick-next {
+    right: 15px;
+  }
+}
+
+.slick-arrows_full-height {
+  .slick-arrow {
+    right: 0;
+    height: 50%;
+  }
+  .slick-prev {
+    bottom: 0;
+  }
+  .slick-next {
+    top: 0;
+  }
+}

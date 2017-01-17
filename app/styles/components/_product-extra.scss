@@ -4,7 +4,7 @@
 
 .product-extra__nav {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   &.fixed {
     position: fixed;
     top: 0;
@@ -118,8 +118,22 @@
   }
 }
 
-.product-extra__feedback-data {
-  margin-bottom: 18px;
+.product-extra__video-gallery {
+  padding-top: 6px;
+}
+
+.product-extra__articles-slider {
+  margin-top: 14px;
+}
+
+.product-extra__certs-container {
+  padding-top: 4px;
+}
+
+.product-extra__certs-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .product-extra__sidebar {

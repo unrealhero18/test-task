@@ -28,24 +28,40 @@ $(function() {
   })();
 
   (function() {
-    var $slider = $('.js-many-products-slider');
+    var customButtons = [
+      '<button type="button" class="slick-arrow slick-prev icon icon-arrow-left"></button>',
+      '<button type="button" class="slick-arrow slick-next icon icon-arrow-right"></button>'
+    ];
 
-    $slider.slick({
+    $('.js-many-products-slider').slick({
       infinite: true,
       slidesToShow: 5,
       slidesToScroll: 2,
-      prevArrow: '<button type="button" class="slick-arrow slick-prev icon icon-arrow-left"></button>',
-      nextArrow: '<button type="button" class="slick-arrow slick-next icon icon-arrow-right"></button>',
+      prevArrow: customButtons[0],
+      nextArrow: customButtons[1],
+      dots: false
+    });
+
+    $('.js-articles-slider').slick({
+      infinite: true,
+      slidesToShow: 2,
+      slidesToScroll: 1,
+      variableWidth: true,
+      prevArrow: customButtons[0],
+      nextArrow: customButtons[1],
       dots: false
     });
   })();
 
   //modal
   (function() {
-    $('.js-modal-image').magnificPopup({
+    var settings = {
       type: 'image',
       gallery: { enabled: true }
-    });
+    };
+
+    $('.js-product-modal').magnificPopup(settings);
+    $('.js-cert-modal').magnificPopup(settings);
   })();
 
   //magic line
@@ -121,5 +137,40 @@ $(function() {
 
       }
     });
+
+    //tabs
+    (function() {
+      $('.js-tab-trigger').on('click', function(e) {
+        e.preventDefault();
+
+        var tabIndex = +this.dataset.tabIndex;
+        var $commonContainer = $(this).closest('.js-tab-container');
+        var $tabsContent = $commonContainer.find('.js-tabs-data');
+
+        $(this).siblings().removeClass('active');
+        $(this).addClass('active');
+
+        $tabsContent.each(function(index, el) {
+          $(el).children().removeClass('active');
+          $(el).children().eq(tabIndex).addClass('active');
+        });
+      });
+    })();
+
+    //video
+    (function() {
+      $('.js-video-play').on('click', function(e) {
+        e.preventDefault();
+
+        var $container = $(this).parent();
+        var $thumb = $container.children('img');
+        var box = [ $container.width(), $container.height() ];
+        var ytVideo = this.dataset.ytVideo;
+        var iframeNode = '<iframe width="' + box[0] + '" height="' + box[1] + '" src="https://www.youtube.com/embed/' + ytVideo + '?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>';
+
+        $(this).addClass('active');
+        $thumb.replaceWith(iframeNode);
+      });
+    })();
   })();
 });
