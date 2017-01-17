@@ -1,8 +1,19 @@
 .products-accompanying {
-  margin-bottom: 56px;
+  margin-bottom: 52px;
+}
+
+.products-accompanying__title {
+  margin-bottom: 15px;
 }
 
 .products-accompanying__tab-triggers {
   margin-bottom: 20px;
-  padding-top: 7px;
+}
+
+.products-accompanying__facing {
+  &.slick-arrows_normal {
+    .slick-arrow {
+      top: -64px;
+    }
+  }
 }

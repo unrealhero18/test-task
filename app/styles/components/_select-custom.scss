@@ -66,3 +66,39 @@
     }
   }
 }
+
+.select-custom_sm {
+  .chosen-single {
+    padding-left: 15px;
+    height: 39px;
+    font-size: 13px;
+    span {
+      line-height: 37px;
+      letter-spacing: 0.5px;
+    }
+    div {
+      right: 7px;
+    }
+  }
+  .chosen-results {
+    padding: 0 10px 12px;
+    li {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  }
+}
+
+.select-custom_bordered {
+  .chosen-single {
+    border: 1px solid #d5d3d3;
+  }
+  &.chosen-container-active {
+    .chosen-single {
+      border-width: 1px;
+    }
+  }
+  .chosen-drop {
+    border-width: 1px;
+  }
+}
