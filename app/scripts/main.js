@@ -51,6 +51,16 @@ $(function() {
       nextArrow: customButtons[1],
       dots: false
     });
+
+    $('.js-viewed-slider').slick({
+      infinite: true,
+      slidesToShow: 5,
+      slidesToScroll: 2,
+      variableWidth: true,
+      prevArrow: customButtons[0],
+      nextArrow: customButtons[1],
+      dots: false
+    });
   })();
 
   //modal

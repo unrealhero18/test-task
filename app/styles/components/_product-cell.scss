@@ -47,22 +47,48 @@
   padding-bottom: 10px;
 }
 
-.product-price__actions {
+.product-cell__actions {
   padding-top: 4px;
   margin-bottom: 19px;
 }
 
-.product-price__action-buy {
+.product-cell__action-buy {
   padding-right: 35px;
   padding-left: 35px;
 }
 
-.product-price__action-compare {
+.product-cell__action-compare {
   margin-left: 14px;
   vertical-align: -3px;
   font-size: 18px;
 }
 
-.product-price__footer-rating {
+.product-cell__footer-rating {
   margin-right: 12px;
+}
+
+.product-cell_bordered {
+  margin-left: -3px;
+  padding: 0 16px 18px 20px;
+  width: 238px;
+  border: 3px solid #eff0f3;
+  .product-cell__img-wrap {
+    margin-bottom: 0;
+    height: 224px;
+  }
+  .product-cell__name {
+    margin-bottom: 5px;
+    height: 47px;
+    font-size: 13px;
+  }
+  .product-cell__price-wrap {
+    margin: 7px 0 14px;
+  }
+  .product-cell__action-buy {
+    padding-right: 22px;
+    padding-left: 22px;
+  }
+  .product-cell__action-compare {
+    margin-left: 18px;
+  }
 }

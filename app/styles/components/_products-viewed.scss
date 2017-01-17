@@ -1,0 +1,21 @@
+.products-viewed__title {
+  display: inline-block;
+  margin-bottom: 15px;
+  vertical-align: middle;
+}
+
+.products-viewed__more {
+  margin-left: 54px;
+  vertical-align: -1px;
+  font-size: 14px;
+}
+
+.products-viewed__text {
+  border-bottom: 1px solid rgba($gray, .3);
+}
+
+.products-viewed__more-icon {
+  margin-left: 5px;
+  vertical-align: middle;
+  color: $brand-danger;
+}
