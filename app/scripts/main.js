@@ -36,10 +36,19 @@ $(function() {
     $('.js-many-products-slider').slick({
       infinite: true,
       slidesToShow: 5,
-      slidesToScroll: 2,
+      slidesToScroll: 1,
       prevArrow: customButtons[0],
       nextArrow: customButtons[1],
-      dots: false
+      dots: false,
+      responsive: [
+        {
+          breakpoint: 1199,
+          settings: {
+            slidesToShow: 4,
+            slidesToScroll: 1
+          }
+        }
+      ]
     });
 
     $('.js-articles-slider').slick({
@@ -55,7 +64,7 @@ $(function() {
     $('.js-viewed-slider').slick({
       infinite: true,
       slidesToShow: 5,
-      slidesToScroll: 2,
+      slidesToScroll: 1,
       variableWidth: true,
       prevArrow: customButtons[0],
       nextArrow: customButtons[1],

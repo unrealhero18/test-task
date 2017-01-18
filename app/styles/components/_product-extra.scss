@@ -172,3 +172,20 @@
   font-size: 11px;
   color: $brand-success;
 }
+
+@media screen and (max-width: $screen-md-max) {
+  .product-extra__nav-link {
+    padding: 15px 25px 18px;
+  }
+
+  .product-extra__nav {
+    &.fixed {
+      width: 940px;
+    }
+  }
+
+  .product-extra__sections {
+    float: none;
+    width: auto;
+  }
+}

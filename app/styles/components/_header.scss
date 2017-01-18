@@ -158,3 +158,55 @@
 .header__actions {
   margin-right: -5px;
 }
+
+@media screen and (max-width: $screen-md-max) {
+  .header__nav-link {
+    padding-right: 5px;
+    padding-left: 5px;
+    white-space: nowrap;
+  }
+
+  .header__lang {
+    flex-basis: 25%;
+  }
+
+  .header__auth {
+    flex-basis: 35%;
+  }
+
+  .header__auth-link {
+    margin-left: 5px;
+  }
+
+  .header__search-field {
+    padding: 0 17px;
+    width: 300px;
+  }
+
+  .header__search-btn {
+    padding-left: 13px;
+    background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 33%,rgba(255,255,255,1) 100%);
+  }
+
+  .header__phone {
+    width: 160px;
+  }
+
+  .header__phone-link {
+    letter-spacing: 0.5px;
+  }
+
+  .header__phone-dd-arrow {
+    margin: 0 0 0 2px;
+  }
+
+  .header__phone-callback {
+    margin-top: 10px;
+  }
+
+  .header__actions-list {
+    margin-top: 7.5px;
+    width: 160px;
+    text-align: right;
+  }
+}

@@ -89,11 +89,11 @@
 
             <div class="header__phone">
               <a href="tel:0800301585" class="header__phone-link"><strong>0-800-30-15-85</strong></a> <a href="javascript:void(0);" class="header__phone-dd-arrow icon icon-arrow-bottom"></a>
-              <button type="button" class="btn btn_bordered btn_warning btn_sm">Обратный звонок</button>
+              <button type="button" class="btn btn_bordered btn_warning btn_sm header__phone-callback">Обратный звонок</button>
             </div>
 
             <div class="actions header__actions">
-              <ul class="actions__list list-unstyled">
+              <ul class="actions__list header__actions-list list-unstyled">
                 <li class="actions__item">
                   <a href="javascript:void(0);" class="actions__link">
                     <figure class="actions__figure">
@@ -156,7 +156,7 @@
               <li class="nav__item col-sm-2">
                 <a href="javascript:void(0);" class="nav__link nav__link_page">
                   <span class="nav__icon icon icon-rating"></span>
-                  Сравнительные тесты
+                  <span class="visible-lg-inline">Сравнительные</span>&nbsp;тесты
                 </a>
               </li>
               <li class="nav__item col-sm-2">
@@ -223,10 +223,10 @@
           </header>
 
           <div class="row">
-            <div class="col-sm-4">
+            <div class="col-lg-4 col-sm-3">
               <div class="product__preview">
                 <!-- pager -->
-                <div class="product__preview-pagers js-product-pagers">
+                <div class="product__preview-pagers clearfix js-product-pagers">
                   <a
                     href="javascript:void(0);"
                     class="product__preview-pager-link active"
@@ -345,7 +345,7 @@
               </div>
             </div>
 
-            <div class="col-sm-6">
+            <div class="col-lg-6 col-sm-7">
               <div class="product__description">
                 <div class="product__state">
                   <span class="product__state-available">Нет в наличии</span>
@@ -1415,7 +1415,7 @@
           </div>
 
           <aside class="product-extra__sidebar">
-            <div class="product-extra__sidebar-sticky-companion js-sticky-element">
+            <div class="product-extra__sidebar-sticky-companion visible-lg js-sticky-element">
               <div class="product-suitable product-extra__suitable">
                 <a href="javascript:void(0);" class="product-suitable__img-wrap" title="Миниатюра «Castrol Magnatec 10W-40 A3/B4 4 л»" tabindex="0">
                   <img src="images/products/miniature/14.jpg" alt="Миниатюра «Castrol Magnatec 10W-40 A3/B4 4 л»" class="product-suitable__img">
@@ -3235,7 +3235,9 @@
 
                 <span class="footer__info-dev">
                   <span class="footer__info-dev-caption">Разработано в</span>
-                  <img src="images/svg/developers-logo.svg" class="footer__info-dev-logo" alt="Логотип студии «Турум-бурум»">
+                  <a href="//turumburum.com/" class="footer__info-dev-link" target="blank">
+                    <img src="images/svg/developers-logo.svg" class="footer__info-dev-logo" alt="Логотип студии «Турум-бурум»">
+                  </a>
                 </span>
               </div>
             </div>

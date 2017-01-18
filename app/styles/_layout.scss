@@ -17,3 +17,25 @@
 .l-product__product-viewed {
   margin-bottom: 80px;
 }
+
+@media screen and (max-width: $screen-md-max) {
+  .l-product__product {
+    margin-bottom: 43px;
+  }
+
+  .l-product__products-similar {
+    margin-bottom: 32px;
+  }
+
+  .l-product__product-accompanying {
+    margin-bottom: 40px;
+  }
+
+  .l-product__product-purchased {
+    margin-bottom: 30px;
+  }
+
+  .l-product__product-viewed {
+    margin-bottom: 60px;
+  }
+}

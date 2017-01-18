@@ -109,3 +109,24 @@
 .product__similar {
   float: right;
 }
+
+@media screen and (max-width: $screen-md-max) {
+  .product__preview {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .product__preview-pagers {
+    float: none;
+    margin-top: 30px;
+    width: auto;
+  }
+
+  .product__state {
+    padding: 15px 0 60px;
+  }
+
+  .product__description {
+    padding-left: 0;
+  }
+}

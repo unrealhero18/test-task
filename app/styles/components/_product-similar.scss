@@ -44,3 +44,10 @@
 .product-similar__more-text {
   border-bottom: 1px dotted currentColor;
 }
+
+@media screen and (max-width: $screen-md-max) {
+  .product-similar {
+    padding: 0 38px;
+    width: 260px;
+  }
+}

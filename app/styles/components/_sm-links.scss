@@ -33,3 +33,12 @@
 .sm-links__item_ig {
   background-position: -129px -65px;
 }
+
+@media screen and (max-width: $screen-md-max) {
+  .sm-links__item {
+    margin: 0 42px 40px 0;
+    &:nth-child(even) {
+      margin-right: 0;
+    }
+  }
+}
