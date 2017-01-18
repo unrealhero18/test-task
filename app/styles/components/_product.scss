@@ -130,3 +130,17 @@
     padding-left: 0;
   }
 }
+
+@media screen and (max-width: $screen-sm-max) {
+  .product__preview-pagers {
+    margin-top: 20px;
+  }
+  
+  .product__state {
+    padding: 10px 0 20px;
+  }
+
+  .product__order {
+    margin-left: 27px;
+  }
+}

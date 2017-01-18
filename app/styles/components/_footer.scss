@@ -162,3 +162,35 @@
     margin: 80px 0 30px;
   }
 }
+
+@media screen and (max-width: $screen-sm-max) {
+  .footer__wrap-left {
+    padding-right: 0;
+  }
+
+  .footer__wrap-right {
+    &:before {
+      content: none;
+    }
+  }
+
+  .footer__contacts {
+    padding: 30px 0 0;
+  }
+
+  .footer__contacts-tel {
+    margin-bottom: 10px;
+  }
+
+  .footer__contacts-tel-tooltip {
+    margin-bottom: 40px;
+  }
+
+  .footer__contacts-sm-title {
+    margin: 30px 0 15px;
+  }
+
+  .footer__nav {
+    padding-top: 15px;
+  }
+}

@@ -1,10 +1,10 @@
 .breadcrumbs__list {
   margin-bottom: 0;
+  padding: 18px 0 0;
 }
 
 .breadcrumbs__item {
   display: inline-block;
-  padding: 18px 0 0;
   color: $gray-lighter;
 }
 
@@ -18,4 +18,10 @@
 .breadcrumbs__icon {
   margin: 0 9px;
   font-size: 11px;
+}
+
+@media screen and (max-width: $screen-sm-max) {
+  .breadcrumbs__item {
+    padding-bottom: 5px;
+  }
 }

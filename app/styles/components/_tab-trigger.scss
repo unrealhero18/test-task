@@ -1,6 +1,6 @@
 .tab-trigger {
   float: left;
-  margin-left: -1px;
+  margin: -1px 0 0 -1px;
   padding: 0 19px;
   height: 39px;
   border: 1px solid #e1e1e1;
@@ -17,4 +17,10 @@
   padding: 0 36px 0 37px;
   font-weight: 700;
   font-size: 16px;
+}
+
+@media screen and (max-width: $screen-md-max) {
+  .tab-trigger {
+    padding: 0 10px;
+  }
 }

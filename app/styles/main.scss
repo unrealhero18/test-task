@@ -7,12 +7,14 @@
 @import "fonts";
 @import "bootstrap-variables-custom";
 @import "bootstrap-custom";
+@import "global";
 @import "layout";
 
 
 //components
 @import 'components/select-custom';
 @import 'components/header';
+@import 'components/header-touch';
 @import 'components/logo';
 @import 'components/buttons';
 @import 'components/actions';

@@ -44,8 +44,13 @@ $(function() {
         {
           breakpoint: 1199,
           settings: {
-            slidesToShow: 4,
-            slidesToScroll: 1
+            slidesToShow: 4
+          }
+        },
+        {
+          breakpoint: 991,
+          settings: {
+            slidesToShow: 3
           }
         }
       ]
@@ -147,9 +152,15 @@ $(function() {
     $('.js-expand-trigger').on('click', function(e) {
       e.preventDefault();
 
+      var multiple = this.dataset.multiple;
       var $container = $(this).closest('.js-expand-container');
-      var $data = $container.find('.js-expand-data').last();
-      var $text = $container.find('.js-expand-text').last();
+      var $data = $container.find('.js-expand-data');
+      var $text = $container.find('.js-expand-text');
+
+      if ( !multiple ) {
+        $data = $data.last();
+        $text = $text.last();
+      }
 
       if ( $(this).hasClass('active') ) {
 

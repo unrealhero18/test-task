@@ -189,3 +189,18 @@
     width: auto;
   }
 }
+
+@media screen and (max-width: $screen-sm-max) {
+  .product-extra__nav-link {
+    padding: 15px 17px 18px;
+    font-size: 13px;
+  }
+
+  .product-extra__certs-row {
+    flex-wrap: wrap;
+  }
+
+  .product-extra__cert-link {
+    margin-bottom: 15px;
+  }
+}

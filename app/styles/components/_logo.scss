@@ -12,3 +12,10 @@
     padding: 30px 35px 20px 30px;
   }
 }
+
+@media screen and (max-width: $screen-sm-max) {
+  .logo__link {
+    display: block;
+    text-align: center;
+  }
+}

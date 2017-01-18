@@ -29,3 +29,21 @@ tfoot.expand-data {
     overflow: visible;
   }
 }
+
+@media screen and (max-width: $screen-sm-max) {
+  .expand-data-sm {
+    display: none;
+  }
+
+  div.expand-data-sm {
+    &.active {
+      display: block;
+    }
+  }
+
+  a.expand-data-sm {
+    &.active {
+      display: inline;
+    }
+  }
+}

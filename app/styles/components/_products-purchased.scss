@@ -6,5 +6,12 @@
 
 .products-purchased__select {
   margin-left: 23px;
+  width: 264px;
   font-weight: 400;
+}
+
+@media screen and (max-width: $screen-md-max) {
+  .products-purchased__select {
+    width: 252px;
+  }
 }

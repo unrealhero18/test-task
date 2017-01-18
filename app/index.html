@@ -31,7 +31,7 @@
       <div class="header__top">
         <div class="container">
           <div class="row">
-            <div class="col-sm-5">
+            <div class="col-md-5">
               <nav class="header__nav">
                 <ul class="header__nav-list list-unstyled">
                   <li class="header__nav-item"><a href="javascript:void(0);" class="header__nav-link">Контакты</a></li>
@@ -44,7 +44,7 @@
               </nav>
             </div>
 
-            <div class="col-sm-5">
+            <div class="col-md-5">
               <div class="header__top-right">
                 <div class="header__lang">
                   <a class="header__lang-trigger header__lang-trigger_active" href="javascript:void(0);">Рус</a>
@@ -76,7 +76,7 @@
       <div class="header__middle">
         <div class="container">
           <div class="header__middle-both">
-            <div class="logo">
+            <div class="logo header__logo">
               <a href="." title="Наш логотип" class="logo__link">
                 <img src="images/logo.png" class="logo__img" alt="Логотип">
               </a>
@@ -88,7 +88,11 @@
             </form>
 
             <div class="header__phone">
-              <a href="tel:0800301585" class="header__phone-link"><strong>0-800-30-15-85</strong></a> <a href="javascript:void(0);" class="header__phone-dd-arrow icon icon-arrow-bottom"></a>
+              <span class="header__phone-wrap">
+                <a href="tel:0800301585" class="header__phone-link"><strong>0-800-30-15-85</strong></a>
+                <a href="javascript:void(0);" class="header__phone-dd-arrow icon icon-arrow-bottom"></a>
+              </span>
+
               <button type="button" class="btn btn_bordered btn_warning btn_sm header__phone-callback">Обратный звонок</button>
             </div>
 
@@ -223,7 +227,7 @@
           </header>
 
           <div class="row">
-            <div class="col-lg-4 col-sm-3">
+            <div class="col-lg-4 col-md-3 col-sm-4">
               <div class="product__preview">
                 <!-- pager -->
                 <div class="product__preview-pagers clearfix js-product-pagers">
@@ -345,7 +349,7 @@
               </div>
             </div>
 
-            <div class="col-lg-6 col-sm-7">
+            <div class="col-lg-6 col-md-7 col-sm-6">
               <div class="product__description">
                 <div class="product__state">
                   <span class="product__state-available">Нет в наличии</span>
@@ -394,7 +398,7 @@
                     </div>
                   </div>
 
-                  <div class="product-similar product__similar">
+                  <div class="product-similar product__similar hidden-sm hidden-xs">
                     <h3 class="product-similar__title">Похожий товар</h3>
 
                     <a href="javascript:void(0);" class="product-similar__img-wrap" title="Миниатюра «CASTRO Manual EP 80W-90 1л»">
@@ -1392,7 +1396,7 @@
             <section class="product-extra__section" id="certifications">
               <h4 class="product-extra__section-title">Сертификаты соответствия</h4>
 
-              <div class="product-extra__certs-container">
+              <div class="product-extra__certs-container js-expand-container">
                 <div class="product-extra__certs-row">
                   <a href="images/certifications/1.jpg" class="product-extra__cert-link js-cert-modal">
                     <img src="images/certifications/1.jpg" class="product-extra__cert-img" alt="Сертификаты соответствия">
@@ -1406,10 +1410,20 @@
                     <img src="images/certifications/3.jpg" class="product-extra__cert-img" alt="Сертификаты соответствия">
                   </a>
 
-                  <a href="images/certifications/4.jpg" class="product-extra__cert-link js-cert-modal">
+                  <a href="images/certifications/4.jpg" class="product-extra__cert-link js-cert-modal expand-data-sm js-expand-data">
                     <img src="images/certifications/4.jpg" class="product-extra__cert-img" alt="Сертификаты соответствия">
                   </a>
                 </div>
+
+                <a
+                  href="javascript:void(0);"
+                  class="product-extra__expand-trigger visible-sm js-expand-trigger"
+                  data-multiple="true"
+                  data-text-hide="Скрыть все сертификаты"
+                  data-text-show="Показать все сертификаты">
+                  <span class="product-extra__expand-icon icon icon-arrow-bottom"></span>
+                  <span class="product-extra__expand-caption js-expand-text">Показать все сертификаты</span>
+                </a>
               </div>
             </section>
           </div>
@@ -2311,9 +2325,7 @@
           </h2>
 
           <select
-            name="purchasedFor"
-            style="width: 264px;"
-            class="select-custom select-custom_white select-custom_bordered select-custom_sm products-purchased__select js-chosen-select">
+            name="purchasedFor" class="select-custom select-custom_white select-custom_bordered select-custom_sm products-purchased__select js-chosen-select">
             <option value="">Volkswagen Golf, 1.9</option>
             <option value="">Ford Focus, 1.6</option>
           </select>
@@ -3155,7 +3167,33 @@
     <footer class="footer">
       <div class="container">
         <div class="row">
-          <div class="col-sm-8">
+          <div class="col-md-2 col-md-push-8">
+            <div class="footer__wrap-right">
+              <div class="footer__contacts">
+                <p class="footer__contacts-tel">
+                  <a href="tel:0800301585" class="footer__contacts-tel-link">0 800 30-15-85</a>
+                </p>
+
+                <p class="footer__contacts-tel-tooltip">
+                  Бесплатно со стационарных
+                  и мобильных телефонов Украины
+                </p>
+
+                <h5 class="footer__contacts-sm-title">Следите за нами в соцсетях:</h5>
+
+                <div class="sm-links clearfix">
+                  <a href="//facebook.com" class="sm-links__item sm-links__item_fb" target="blank"></a>
+                  <a href="//plus.google.com" class="sm-links__item sm-links__item_gp" target="blank"></a>
+                  <a href="//twitter.com" class="sm-links__item sm-links__item_tw" target="blank"></a>
+                  <a href="//youtube.com" class="sm-links__item sm-links__item_yt" target="blank"></a>
+                  <a href="//vk.com" class="sm-links__item sm-links__item_vk" target="blank"></a>
+                  <a href="//www.instagram.com" class="sm-links__item sm-links__item_ig" target="blank"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-8 col-md-pull-2">
             <div class="footer__wrap-left">
               <div class="footer__nav">
                 <div class="footer__nav-col">
@@ -3239,32 +3277,6 @@
                     <img src="images/svg/developers-logo.svg" class="footer__info-dev-logo" alt="Логотип студии «Турум-бурум»">
                   </a>
                 </span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-sm-2">
-            <div class="footer__wrap-right">
-              <div class="footer__contacts">
-                <p class="footer__contacts-tel">
-                  <a href="tel:0800301585" class="footer__contacts-tel-link">0 800 30-15-85</a>
-                </p>
-
-                <p class="footer__contacts-tel-tooltip">
-                  Бесплатно со стационарных
-                  и мобильных телефонов Украины
-                </p>
-
-                <h5 class="footer__contacts-sm-title">Следите за нами в соцсетях:</h5>
-
-                <div class="sm-links clearfix">
-                  <a href="//facebook.com" class="sm-links__item sm-links__item_fb" target="blank"></a>
-                  <a href="//plus.google.com" class="sm-links__item sm-links__item_gp" target="blank"></a>
-                  <a href="//twitter.com" class="sm-links__item sm-links__item_tw" target="blank"></a>
-                  <a href="//youtube.com" class="sm-links__item sm-links__item_yt" target="blank"></a>
-                  <a href="//vk.com" class="sm-links__item sm-links__item_vk" target="blank"></a>
-                  <a href="//www.instagram.com" class="sm-links__item sm-links__item_ig" target="blank"></a>
-                </div>
               </div>
             </div>
           </div>

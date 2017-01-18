@@ -63,3 +63,13 @@
     font-size: 15px;
   }
 }
+
+@media screen and (max-width: $screen-sm-max) {
+  .nav__link_catalog {
+    padding: 0 15px;
+    font-size: 14px;
+  }
+  .nav__link_page {
+    font-size: 13px;
+  }
+}
