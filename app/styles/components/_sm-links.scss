@@ -1,0 +1,35 @@
+.sm-links__item {
+  float: left;
+  margin: 0 23px 23px 0;
+  width: 42px;
+  height: 42px;
+  background-image: url('../images/sprite-sm.png');
+  transition: transform 1s;
+  &:hover {
+    transform: rotate3d(0, 1, 0, 360deg)
+  }
+}
+
+.sm-links__item_fb {
+  background-position: 0 0;
+}
+
+.sm-links__item_gp {
+  background-position: -63px 0;
+}
+
+.sm-links__item_tw {
+  background-position: -129px 0;
+}
+
+.sm-links__item_yt {
+  background-position: 0 -65px;
+}
+
+.sm-links__item_vk {
+  background-position: -63px -65px;
+}
+
+.sm-links__item_ig {
+  background-position: -129px -65px;
+}

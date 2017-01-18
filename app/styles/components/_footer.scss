@@ -1,0 +1,137 @@
+.footer {
+  position: relative;
+  background-color: #474a4e;
+  overflow: hidden;
+  color: #fff;
+}
+
+.footer__wrap-left {
+  padding-right: 60px;
+}
+
+.footer__nav {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  padding: 40px 0 27px 0;
+  border-bottom: 1px solid #595c5f;
+}
+
+.footer__nav-col {
+  &:nth-child(1) {
+    margin-right: 38px;
+  }
+  &:nth-child(2) {
+    margin-right: 67px;
+  }
+  &:nth-child(3) {
+    margin-right: 58px;
+  }
+  &:nth-child(4) {
+    margin-right: 68px;
+  }
+}
+
+.footer__nav-col_without-title {
+  margin-top: 39px;
+}
+
+.footer__nav-title {
+  margin-bottom: 15px;
+}
+
+.footer__nav-item {
+  margin-bottom: 10px;
+  white-space: nowrap;
+}
+
+.footer__nav-link,
+.footer__nav-title-link {
+  color: inherit;
+  &:hover {
+    text-decoration: underline;
+    color: inherit;
+  }
+}
+
+.footer__nav-title-link {
+  font-size: .942em;
+  opacity: .7;
+  &:hover {
+    opacity: .9;
+  }
+}
+
+.footer__nav-link {
+  font-size: 14px;
+  opacity: .4;
+  &:hover {
+    opacity: .6;
+  }
+}
+
+.footer__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 71px;
+  font-size: 14px;
+}
+
+.footer__info-copyright {
+  opacity: .3;
+}
+
+.footer__info-dev-caption {
+  color: $gray-lighter;
+}
+
+.footer__info-dev-logo {
+  opacity: .8;
+}
+
+.footer__wrap-right {
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin-left: -45px;
+    width: 9999px;
+    height: 9999px;
+    background-color: #3c3f43;
+  }
+}
+
+.footer__contacts {
+  position: relative;
+  padding: 45px 0 31px 26px;
+}
+
+.footer__contacts-tel {
+  margin-bottom: 13px;
+}
+
+.footer__contacts-tel-link {
+  font-weight: 700;
+  font-size: 23px;
+  color: inherit;
+  opacity: .77;
+  &:hover {
+    color: currentColor;
+    opacity: .9;
+  }
+}
+
+.footer__contacts-tel-tooltip {
+  margin-bottom: 54px;
+  font-size: 12px;
+  opacity: .3;
+}
+
+.footer__contacts-sm-title {
+  margin-bottom: 18px;
+  font-weight: 400;
+  font-size: 14px;
+  opacity: .5;
+}
