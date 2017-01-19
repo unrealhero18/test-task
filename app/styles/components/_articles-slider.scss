@@ -48,7 +48,7 @@
   color: $gray-light;
 }
 
-@media screen and (max-width: $screen-sm-max) {
+@media screen and (max-width: $screen-xs-max) {
   .articles-slider__slide-img-wrap {
     display: none;
   }

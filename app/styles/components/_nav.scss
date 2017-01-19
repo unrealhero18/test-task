@@ -25,7 +25,6 @@
 .nav__link_page {
   justify-content: center;
   margin-left: -30px;
-  text-align: center;
   text-transform: uppercase;
   font-size: 14px;
   &:after {
@@ -44,6 +43,10 @@
   .nav__icon {
     margin-right: 10px;
   }
+}
+
+.nav__text-overflow {
+  margin-right: 4px;
 }
 
 .nav__icon {
@@ -69,6 +72,7 @@
     padding: 0 15px;
     font-size: 14px;
   }
+
   .nav__link_page {
     font-size: 13px;
   }
@@ -77,10 +81,19 @@
 @media screen and (max-width: $screen-xs-max) {
   .nav__link_page {
     margin: 0 -15px;
+    padding: 0 15px;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    text-align: right;
+    .nav__icon {
+      margin: 0;
+      width: 40px;
+    }
     &:after {
       content: none;
     }
   }
+
   .nav__link_catalog {
     margin: 0 -15px;
   }

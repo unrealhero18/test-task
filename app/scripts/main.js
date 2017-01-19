@@ -4,7 +4,7 @@ $(function() {
     $('.js-touch-menu-trigger').on('click', function(e) {
       e.preventDefault();
 
-      var target = $(this).attr('href');
+      var target = this.hash;
       $(target).toggleClass('active');
       $('html, body').toggleClass('no-scroll');
     });
@@ -23,9 +23,16 @@ $(function() {
     var $slider = $('.js-single-product-slider');
 
     $slider.slick({
-      adaptiveHeight: true,
       arrows: false,
-      dots: false
+      dots: false,
+      responsive: [
+        {
+          breakpoint: 767,
+          settings: {
+            adaptiveHeight: true
+          }
+        }
+      ]
     });
 
     $('.js-product-pagers').on('click', 'a', function(e) {
@@ -144,9 +151,23 @@ $(function() {
     var $linkCollections = $('.js-product-enav').children().children();
     $linkCollections.first().magicLine().addClass('active');
 
-    $('.js-product-enav').on('click', 'a', function() {
+    $('.js-product-enav').on('click', 'a', function(e) {
+      e.preventDefault();
+
       $linkCollections.removeClass('active');
       $(this).magicLine().addClass('active');
+
+      $(document).off("scroll");
+      $(window).off('scroll');
+
+      var $target = $(this.hash);
+      var scrollToTarget = $target.offset().top - 60;
+
+      $('html, body').addClass('scroll-block').stop().animate({
+          'scrollTop': scrollToTarget
+      }, 500, 'swing', function() {
+        $().stickyFunc();
+      });
     });
 
     $('.js-product-enav').on('mouseenter', 'a', function() {
@@ -160,26 +181,55 @@ $(function() {
 
   //element sticky
   (function() {
-    var $stickyElements = $('.js-sticky-element');
-    var $path = $('.js-sticky-path');
+    $.fn.stickyFunc = function () {
+      var $stickyElements = $('.js-sticky-element');
+      var $path = $('.js-sticky-path');
 
-    $(window).on('scroll', function() {
-      var scrollY = window.scrollY;
+      $(window).on('scroll', function() {
+        var scrollY = window.scrollY;
 
-      var shiftBottom = 0;
-      $stickyElements.each(function(index, el) {
-        var height = $(el).outerHeight();
-        shiftBottom = height > shiftBottom ? height : shiftBottom;
+        var targetTop = $stickyElements.parent().offset().top;
+        var targetBottom = targetTop + $path.height();
+
+        if ( scrollY >= targetTop && scrollY < targetBottom ) {
+
+          $stickyElements.each(function() {
+            var isFixed = $(this).hasClass('fixed');
+            var height = $(this).outerHeight();
+
+            if ( scrollY > targetBottom - height ) {
+              isFixed && $(this).removeClass('fixed');
+            } else {
+              !isFixed && $(this).addClass('fixed');
+            }
+          });
+
+          var $enavCollecion = $('.js-product-enav').children().children();
+          $enavCollecion.each(function() {
+            var $currentLink = $(this);
+            var $targetElement = $( $currentLink.attr("href") );
+            var targetTopPosition = $targetElement.offset().top - 70;
+            var targetBottomPosition = targetTopPosition + $targetElement.height();
+
+            if ( scrollY >= targetTopPosition && scrollY < targetBottomPosition ) {
+              $enavCollecion.removeClass('active');
+              $currentLink.addClass('active').magicLine();
+            }
+          });
+
+        } else {
+          $stickyElements.removeClass('fixed');
+        }
       });
+    }
 
-      var targetTop = $stickyElements.parent().offset().top;
-      var targetBottom = targetTop + $path.height() - shiftBottom;
-      var isFixed = $stickyElements.hasClass('fixed');
+    $(window).on('resize load', function() {
+      var mobileScreen = window.matchMedia('(min-width: 320px) and (max-width: 767px)').matches;
 
-      if ( scrollY >= targetTop && scrollY < targetBottom ) {
-        !isFixed && $stickyElements.addClass('fixed');
+      if ( !mobileScreen ) {
+        $().stickyFunc();
       } else {
-        isFixed && $stickyElements.removeClass('fixed');
+        $(window).off('scroll');
       }
     });
   })();
@@ -190,9 +240,16 @@ $(function() {
       e.preventDefault();
 
       var multiple = this.dataset.multiple;
+      var alias = this.dataset.alias;
+
       var $container = $(this).closest('.js-expand-container');
       var $data = $container.find('.js-expand-data');
       var $text = $container.find('.js-expand-text');
+
+      if ( alias ) {
+        var $alias = $(alias);
+        $data = $data.add($alias);
+      }
 
       if ( !multiple ) {
         $data = $data.last();

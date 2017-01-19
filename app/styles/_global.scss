@@ -1,3 +1,9 @@
+a {
+  &:focus {
+    color: inherit;
+  }
+}
+
 @media screen and (max-width: $screen-md-max) {
   h2 {
     font-size: 24px;
@@ -15,5 +21,16 @@
 
   h3 {
     font-size: 16px;
+  }
+
+  select {
+    padding: 10px 15px;
+    border: 1px solid #aaa;
+    background: #fff url('../images/svg/arrow-bottom.svg') right 10px top 50% / 22px 14px no-repeat;
+    font-size: 16px;
+    appearance: none;
+    option {
+      padding: 3px;
+    }
   }
 }

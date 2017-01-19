@@ -45,6 +45,13 @@
 
 @media screen and (max-width: $screen-sm-max) {
   .sm-links {
-    max-width: 200px;
+    margin-right: 0;
+    max-width: none;
+  }
+
+  .sm-links__item {
+    float: none;
+    display: inline-block;
+    margin: 0 20px 30px;
   }
 }

@@ -3,15 +3,20 @@
   border: 0;
   text-align: center;
   transition: background-color .3s, color .3s;
+  &:focus {
+    outline: 0;
+  }
 }
 
 .btn_warning {
   background-color: $brand-warning;
+  &:focus,
   &:hover {
     background-color: darken($brand-warning, 15%);
   }
   &.btn_bordered {
     border-color: $brand-warning;
+    &:focus,
     &:hover {
       background-color: $brand-warning;
     }
@@ -21,12 +26,14 @@
 .btn_danger {
   background-color: $brand-danger;
   color: #fff;
+  &:focus,
   &:hover {
     background-color: darken($brand-danger, 15%);
   }
   &.btn_bordered {
     border-color: $brand-danger;
     color: $brand-danger;
+    &:focus,
     &:hover {
       background-color: $brand-danger;
       color: #fff;

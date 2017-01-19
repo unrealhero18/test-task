@@ -50,13 +50,6 @@
   }
 }
 
-.product__preview-pager-link_border_false {
-  border-color: transparent;
-  &.active {
-    border-color: transparent;
-  }
-}
-
 .product__preview-pager-img {
   max-width: 100%;
   max-height: 100%;
@@ -152,6 +145,11 @@
 
   .product__preview-slide {
     padding: 15px 30px 5px;
+  }
+
+  .product__preview-pager-link {
+    width: 63px;
+    height: 63px;
   }
 
   .product__state-available {

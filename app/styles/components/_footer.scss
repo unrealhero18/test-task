@@ -195,13 +195,62 @@
   }
 }
 
-@media screen and (max-width: $screen-sm-max) {
+@media screen and (max-width: $screen-xs-max) {
+  .footer {
+    text-align: center;
+  }
+
   .footer__nav {
     display: block;
   }
 
   .footer__nav-col {
-    width: auto;
+    &:nth-child(-1n+2) {
+      width: auto;
+    }
+    &:nth-child(1n+3) {
+      width: auto;
+    }
+  }
+
+  .footer__nav-col_without-title {
+    margin-top: 0;
+  }
+
+  .footer__nav-title-link {
+    font-size: 20px;
+    &:focus,
+    &:hover {
+      text-decoration: none;
+    }
+    &.active {
+      .footer__nav-icon {
+        transform: scale(1, -1);
+      }
+    }
+  }
+
+  .footer__nav-icon {
+    position: absolute;
+    margin: 6px 0 0 6px;
+    font-size: 9px;
+  }
+
+  .footer__nav-link {
+    font-size: 15px;
+  }
+
+  .footer__contacts-tel-link {
+    font-size: 28px;
+  }
+
+  .footer__contacts-tel-tooltip {
+    font-size: 13px;
+  }
+
+  .footer__contacts-sm-title {
+    margin-bottom: 20px;
+    font-size: 16px;
   }
 
   .footer__info {

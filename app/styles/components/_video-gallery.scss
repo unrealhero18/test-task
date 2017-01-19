@@ -2,10 +2,11 @@
   margin: 0 -15px;
 }
 
-.video-gallery iframe,
-.video-gallery__thumb {
-  display: block;
-  width: 100%;
+.video-gallery__element {
+  & > *:first-child {
+    display: block;
+    width: 100%;
+  }
 }
 
 .video-gallery__element {
@@ -37,7 +38,7 @@
   }
 }
 
-@media screen and (max-width: $screen-sm-max) {
+@media screen and (max-width: $screen-xs-max) {
   .video-gallery__element {
     margin-bottom: 15px;
     width: auto;
