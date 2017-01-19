@@ -157,7 +157,7 @@ $(function() {
       $linkCollections.removeClass('active');
       $(this).magicLine().addClass('active');
 
-      $(document).off("scroll");
+      $(document).off('scroll');
       $(window).off('scroll');
 
       var $target = $(this.hash);
@@ -207,7 +207,7 @@ $(function() {
           var $enavCollecion = $('.js-product-enav').children().children();
           $enavCollecion.each(function() {
             var $currentLink = $(this);
-            var $targetElement = $( $currentLink.attr("href") );
+            var $targetElement = $( $currentLink.attr('href') );
             var targetTopPosition = $targetElement.offset().top - 70;
             var targetBottomPosition = targetTopPosition + $targetElement.height();
 

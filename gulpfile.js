@@ -153,7 +153,10 @@ gulp.task('wiredep', () => {
   gulp.src('app/*.html')
     .pipe(wiredep({
       ignorePath: /^(\.\.\/)*\.\./,
-      exclude: [ 'bower_components/bootstrap-sass/assets/javascripts/' ]
+      exclude: [
+        'bower_components/bootstrap-sass/assets/javascripts/',
+        'bower_components/chosen/chosen.css' 
+      ]
     }))
     .pipe(gulp.dest('app'));
 });

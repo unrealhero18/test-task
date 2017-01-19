@@ -1,10 +1,10 @@
 .select-custom {
   .chosen-single {
     display: block;
-    background-image: none;
     box-shadow: none;
     border-width: 0;
     border-radius: 0;
+    background-color: transparent;
     div {
       top: 50%;
       margin-top: -5px;
@@ -12,7 +12,6 @@
       b {
         @extend .icon;
         @extend .icon-arrow-bottom;
-        background-image: none;
         font-size: 8px;
       }
     }
@@ -21,7 +20,6 @@
     @include tab-focus;
     .chosen-single {
       border-width: 0;
-      background-image: none;
     }
   }
   .chosen-drop {
