@@ -58,7 +58,7 @@ gulp.task('html', ['styles', 'scripts'], () => {
     .pipe($.useref({searchPath: ['.tmp', 'app', '.']}))
     .pipe($.if('*.js', $.uglify()))
     .pipe($.if('*.css', $.cssnano({safe: true, autoprefixer: false})))
-    .pipe($.if('*.html', $.htmlmin({collapseWhitespace: true})))
+    .pipe($.if('*.html', $.htmlmin({collapseWhitespace: false})))
     .pipe(gulp.dest('dist'));
 });
 
@@ -155,7 +155,7 @@ gulp.task('wiredep', () => {
       ignorePath: /^(\.\.\/)*\.\./,
       exclude: [
         'bower_components/bootstrap-sass/assets/javascripts/',
-        'bower_components/chosen/chosen.css' 
+        'bower_components/chosen/chosen.css'
       ]
     }))
     .pipe(gulp.dest('app'));
