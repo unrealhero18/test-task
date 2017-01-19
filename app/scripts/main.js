@@ -6,6 +6,7 @@ $(function() {
 
       var target = $(this).attr('href');
       $(target).toggleClass('active');
+      $('html, body').toggleClass('no-scroll');
     });
   })();
 
