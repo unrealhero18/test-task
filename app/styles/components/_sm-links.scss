@@ -44,5 +44,7 @@
 }
 
 @media screen and (max-width: $screen-sm-max) {
-
+  .sm-links {
+    max-width: 200px;
+  }
 }

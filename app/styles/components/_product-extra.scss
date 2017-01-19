@@ -200,7 +200,40 @@
     flex-wrap: wrap;
   }
 
-  .product-extra__cert-link {
+  .product-extra__cert-img {
     margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: $screen-sm-max) {
+  .product-extra__section {
+    margin-bottom: 30px;
+  }
+
+  .product-extra__characteristics-table {
+    .table__data:first-child {
+      width: 80%;
+    }
+  }
+
+  .product-extra__feedback-actions {
+    display: block;
+  }
+
+  .product-extra__feedback-actions-left {
+    margin-bottom: 10px;
+  }
+
+  .product-extra__feedback-tab-trigger {
+    width: 50%;
+  }
+
+  .product-extra__feedback-actions-btn {
+    width: 100%;
+  }
+
+  .product-extra__certs-row {
+    display: block;
+    text-align: center;
   }
 }

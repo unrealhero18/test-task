@@ -135,12 +135,42 @@
   .product__preview-pagers {
     margin-top: 20px;
   }
-  
+
   .product__state {
     padding: 10px 0 20px;
   }
 
   .product__order {
     margin-left: 27px;
+  }
+}
+
+@media screen and (max-width: $screen-xs-max) {
+  .product__id {
+    font-size: 11px;
+  }
+
+  .product__preview-slide {
+    padding: 15px 30px 5px;
+  }
+
+  .product__state-available {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+
+  .product__state-available-rating {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+
+  .product__state-feedback {
+    margin: 0 15px 0 0;
+  }
+
+  .product__order {
+    margin: 0;
   }
 }

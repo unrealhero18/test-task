@@ -19,3 +19,17 @@
   vertical-align: middle;
   color: $brand-danger;
 }
+
+@media screen and (max-width: $screen-md-max) {
+  .product-viewed__header {
+    margin-bottom: 25px;
+  }
+
+  .products-viewed__title {
+    display: block;
+  }
+
+  .products-viewed__more {
+    margin-left: 0;
+  }
+}

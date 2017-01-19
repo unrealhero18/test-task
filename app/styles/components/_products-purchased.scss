@@ -15,3 +15,18 @@
     width: 252px;
   }
 }
+
+@media screen and (max-width: $screen-md-max) {
+  .products-purchased__header {
+    margin-bottom: 10px;
+  }
+
+  .products-purchased__title {
+    display: block;
+  }
+
+  .products-purchased__select {
+    margin-left: 0;
+    width: 290px;
+  }
+}

@@ -47,3 +47,14 @@
   line-height: 1.4285714;
   color: $gray-light;
 }
+
+@media screen and (max-width: $screen-sm-max) {
+  .articles-slider__slide-img-wrap {
+    display: none;
+  }
+
+  .articles-slider__slide-content {
+    padding: 20px;
+    width: auto;
+  }
+}

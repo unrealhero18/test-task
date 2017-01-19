@@ -1,4 +1,14 @@
 $(function() {
+  //touch menu
+  (function() {
+    $('.js-touch-menu-trigger').on('click', function(e) {
+      e.preventDefault();
+
+      var target = $(this).attr('href');
+      $(target).toggleClass('active');
+    });
+  })();
+
   //chosen
   (function() {
     $('.js-chosen-select').chosen({
@@ -12,6 +22,7 @@ $(function() {
     var $slider = $('.js-single-product-slider');
 
     $slider.slick({
+      adaptiveHeight: true,
       arrows: false,
       dots: false
     });
@@ -52,6 +63,14 @@ $(function() {
           settings: {
             slidesToShow: 3
           }
+        },
+        {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 1,
+            arrows: false,
+            dots: true
+          }
         }
       ]
     });
@@ -63,17 +82,34 @@ $(function() {
       variableWidth: true,
       prevArrow: customButtons[0],
       nextArrow: customButtons[1],
-      dots: false
+      dots: false,
+      responsive: [
+        {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 1,
+            variableWidth: false
+          }
+        }
+      ]
     });
 
     $('.js-viewed-slider').slick({
       infinite: true,
-      slidesToShow: 5,
       slidesToScroll: 1,
       variableWidth: true,
       prevArrow: customButtons[0],
       nextArrow: customButtons[1],
-      dots: false
+      dots: false,
+      responsive: [
+        {
+          breakpoint: 767,
+          settings: {
+            arrows: false,
+            dots: true
+          }
+        }
+      ]
     });
   })();
 

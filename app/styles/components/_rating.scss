@@ -12,3 +12,13 @@
 .rating__icon_mark ~ .rating__icon {
   color: currentColor;
 }
+
+@media screen and (max-width: $screen-sm-max) {
+  .rating__icon {
+    font-size: 16px;
+  }
+
+  .rating__score {
+    font-size: 16px;
+  }
+}

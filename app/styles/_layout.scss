@@ -39,3 +39,25 @@
     margin-bottom: 60px;
   }
 }
+
+@media screen and (max-width: $screen-md-max) {
+  .l-product__product {
+    margin-bottom: 35px;
+  }
+
+  .l-product__products-similar {
+    margin-bottom: 25px;
+  }
+
+  .l-product__product-accompanying {
+    margin-bottom: 30px;
+  }
+
+  .l-product__product-purchased {
+    margin-bottom: 25px;
+  }
+
+  .l-product__product-viewed {
+    margin-bottom: 40px;
+  }
+}

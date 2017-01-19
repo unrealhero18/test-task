@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="">
+<html lang="ru">
   <head>
     <meta charset="utf-8">
     <meta name="description" content="">
@@ -28,7 +28,100 @@
     <![endif]-->
 
     <header class="header">
-      <div class="header__top">
+      <div class="header-touch visible-xs">
+        <a href="#header-touch-menu" class="header-touch__trigger js-touch-menu-trigger">
+          <span class="header-touch__icon icon icon-menu-touch"></span>
+        </a>
+
+        <div class="header-touch__menu" id="header-touch-menu">
+          <a href="#header-touch-menu" class="header-touch__menu-close-action js-touch-menu-trigger">
+            <span class="header-touch__menu-close-icon icon icon-close"></span>
+          </a>
+
+          <ul class="header-touch__nav-list list-unstyled">
+            <li class="header-touch__nav-item">
+              <a href="javascript:void(0);" class="header-touch__nav-link">
+                <span class="header-touch__nav-icon icon icon-address-book"></span>
+                Контакты
+              </a>
+            </li>
+
+            <li class="header-touch__nav-item">
+              <a href="javascript:void(0);" class="header-touch__nav-link">
+                <span class="header-touch__nav-icon icon icon-cart"></span>
+                Магазины
+              </a>
+            </li>
+
+            <li class="header-touch__nav-item">
+              <a href="javascript:void(0);" class="header-touch__nav-link">
+                <span class="header-touch__nav-icon icon icon-file-text"></span>
+                О нас
+              </a>
+            </li>
+
+            <li class="header-touch__nav-item">
+              <a href="javascript:void(0);" class="header-touch__nav-link">
+                <span class="header-touch__nav-icon icon icon-truck"></span>
+                Доставка
+              </a>
+            </li>
+
+            <li class="header-touch__nav-item">
+              <a href="javascript:void(0);" class="header-touch__nav-link">
+                <span class="header-touch__nav-icon icon icon-credit-card"></span>
+                Оплата
+              </a>
+            </li>
+
+            <li class="header-touch__nav-item">
+              <a href="javascript:void(0);" class="header-touch__nav-link">
+                <span class="header-touch__nav-icon icon icon-gift"></span>
+                Бонусная программа
+              </a>
+            </li>
+
+            <li class="header-touch__nav-item">
+              <a href="javascript:void(0);" class="header-touch__nav-link">
+                <span class="header-touch__nav-icon icon icon-lock"></span>
+                Вход
+              </a>
+            </li>
+
+            <li class="header-touch__nav-item">
+              <a href="javascript:void(0);" class="header-touch__nav-link">
+                <span class="header-touch__nav-icon icon icon-user-plus"></span>
+                Регистрация
+              </a>
+            </li>
+
+            <li class="header-touch__nav-item">
+              <label for="touch-city-select" class="header-touch__nav-label">
+                <span class="header-touch__nav-icon icon icon-office"></span>
+              </label>
+
+              <select name="touchCitySelect" class="header-touch__nav-select" id="touch-city-select">
+                <option value="">Киев</option>
+                <option value="">Днепр</option>
+                <option value="">Львов</option>
+              </select>
+            </li>
+
+            <li class="header-touch__nav-item">
+              <span class="header-touch__nav-label">
+                <span class="header-touch__nav-icon icon icon-bubbles2"></span>
+              </span>
+
+              <span class="header__lang header-touch__lang">
+                <a class="header__lang-trigger header__lang-trigger_active" href="javascript:void(0);">Рус</a>
+                <a class="header__lang-trigger" href="javascript:void(0);">Укр</a>
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="header__top hidden-xs">
         <div class="container">
           <div class="row">
             <div class="col-md-5">
@@ -362,12 +455,12 @@
                     <span class="rating__icon icon icon-star"></span>
                   </span>
 
-                  <a href="javascript:void(0);" class=".product-feedback product__state-feedback">
+                  <a href="javascript:void(0);" class="product-feedback product__state-feedback">
                     <span class="product-feedback__icon icon icon-comment"></span>
                     <span class="product-feedback__caption">3 отзыва</span>
                   </a>
 
-                  <a href="javascript:void(0);" class=".product-feedback product__state-feedback">
+                  <a href="javascript:void(0);" class="product-feedback product__state-feedback">
                     <span class="product-feedback__icon icon icon-question"></span>
                     <span class="product-feedback__caption">4 вопроса</span>
                   </a>
@@ -749,7 +842,7 @@
 
     <div class="product-extra">
       <div class="container">
-        <div class="product-extra__nav-wrap">
+        <div class="product-extra__nav-wrap hidden-xs">
           <div class="product-extra__nav js-sticky-element">
             <ul class="product-extra__nav-list list-unstyled js-product-enav">
               <li class="product-extra__nav-item">
@@ -782,69 +875,71 @@
             <section class="product-extra__section js-expand-container" id="characteristics">
               <h4 class="product-extra__section-title">Характеристики товара</h4>
 
-              <table class="product-extra__characteristics-table table table_striped">
-                <tfoot class="expand-data js-expand-data">
-                  <tr class="table__row">
-                    <td class="table__data">Класс вязкости:</td>
-                    <td class="table__data">5W-40</td>
-                  </tr>
-                  <tr class="table__row">
-                    <td class="table__data">сСт при 40ºC:</td>
-                    <td class="table__data">84</td>
-                  </tr>
-                  <tr class="table__row">
-                    <td class="table__data">сСт при 100ºC:</td>
-                    <td class="table__data">14</td>
-                  </tr>
-                  <tr class="table__row">
-                    <td class="table__data">Зольность сульфатная, % мас., ASTM D 874:</td>
-                    <td class="table__data">1,1</td>
-                  </tr>
-                  <tr class="table__row">
-                    <td class="table__data">Содержание фосфора:</td>
-                    <td class="table__data">0,0095</td>
-                  </tr>
-                  <tr class="table__row">
-                    <td class="table__data">Температура вспышки, ºC, ASTM D 92:</td>
-                    <td class="table__data">222</td>
-                  </tr>
-                  <tr class="table__row">
-                    <td class="table__data">Температура застывания, ºC, ASTM D 97:</td>
-                    <td class="table__data">-39</td>
-                  </tr>
-                </tfoot>
+              <div class="table-responsive">
+                <table class="product-extra__characteristics-table table table_striped">
+                  <tbody>
+                    <tr class="table__row">
+                      <td class="table__data">Класс вязкости:</td>
+                      <td class="table__data">5W-40</td>
+                    </tr>
+                    <tr class="table__row">
+                      <td class="table__data">сСт при 40ºC:</td>
+                      <td class="table__data">84</td>
+                    </tr>
+                    <tr class="table__row">
+                      <td class="table__data">сСт при 100ºC:</td>
+                      <td class="table__data">14</td>
+                    </tr>
+                    <tr class="table__row">
+                      <td class="table__data">Зольность сульфатная, % мас., ASTM D 874:</td>
+                      <td class="table__data">1,1</td>
+                    </tr>
+                    <tr class="table__row">
+                      <td class="table__data">Содержание фосфора:</td>
+                      <td class="table__data">0,0095</td>
+                    </tr>
+                    <tr class="table__row">
+                      <td class="table__data">Температура вспышки, ºC, ASTM D 92:</td>
+                      <td class="table__data">222</td>
+                    </tr>
+                    <tr class="table__row">
+                      <td class="table__data">Температура застывания, ºC, ASTM D 97:</td>
+                      <td class="table__data">-39</td>
+                    </tr>
+                  </tbody>
 
-                <tbody>
-                  <tr class="table__row">
-                    <td class="table__data">Класс вязкости:</td>
-                    <td class="table__data">5W-40</td>
-                  </tr>
-                  <tr class="table__row">
-                    <td class="table__data">сСт при 40ºC:</td>
-                    <td class="table__data">84</td>
-                  </tr>
-                  <tr class="table__row">
-                    <td class="table__data">сСт при 100ºC:</td>
-                    <td class="table__data">14</td>
-                  </tr>
-                  <tr class="table__row">
-                    <td class="table__data">Зольность сульфатная, % мас., ASTM D 874:</td>
-                    <td class="table__data">1,1</td>
-                  </tr>
-                  <tr class="table__row">
-                    <td class="table__data">Содержание фосфора:</td>
-                    <td class="table__data">0,0095</td>
-                  </tr>
-                  <tr class="table__row">
-                    <td class="table__data">Температура вспышки, ºC, ASTM D 92:</td>
-                    <td class="table__data">222</td>
-                  </tr>
-                  <tr class="table__row">
-                    <td class="table__data">Температура застывания, ºC, ASTM D 97:</td>
-                    <td class="table__data">-39</td>
-                  </tr>
-                </tbody>
-              </table>
+                  <tfoot class="expand-data js-expand-data">
+                    <tr class="table__row">
+                      <td class="table__data">Класс вязкости:</td>
+                      <td class="table__data">5W-40</td>
+                    </tr>
+                    <tr class="table__row">
+                      <td class="table__data">сСт при 40ºC:</td>
+                      <td class="table__data">84</td>
+                    </tr>
+                    <tr class="table__row">
+                      <td class="table__data">сСт при 100ºC:</td>
+                      <td class="table__data">14</td>
+                    </tr>
+                    <tr class="table__row">
+                      <td class="table__data">Зольность сульфатная, % мас., ASTM D 874:</td>
+                      <td class="table__data">1,1</td>
+                    </tr>
+                    <tr class="table__row">
+                      <td class="table__data">Содержание фосфора:</td>
+                      <td class="table__data">0,0095</td>
+                    </tr>
+                    <tr class="table__row">
+                      <td class="table__data">Температура вспышки, ºC, ASTM D 92:</td>
+                      <td class="table__data">222</td>
+                    </tr>
+                    <tr class="table__row">
+                      <td class="table__data">Температура застывания, ºC, ASTM D 97:</td>
+                      <td class="table__data">-39</td>
+                    </tr>
+                  </tfoot>
+                </table>
+              </div>
 
               <a href="javascript:void(0);"
                 class="product-extra__expand-trigger js-expand-trigger"
@@ -895,7 +990,7 @@
 
             <div class="product-extra__section js-expand-container js-tab-container" id="feedback">
               <div class="product-extra__feedback-actions">
-                <div class="product-extra__feedback-actions-left">
+                <div class="product-extra__feedback-actions-left clearfix">
                   <button
                     type="button"
                     data-tab-index="0"
@@ -913,8 +1008,8 @@
 
                 <div class="product-extra__feedback-actions-right">
                   <div class="tabs-data js-tabs-data">
-                    <button type="button" class="btn btn_warning btn_md btn_bold active">Оставить отзыв</button>
-                    <button type="button" class="btn btn_warning btn_md btn_bold">Задать вопрос</button>
+                    <button type="button" class="btn btn_warning btn_md btn_bold product-extra__feedback-actions-btn active">Оставить отзыв</button>
+                    <button type="button" class="btn btn_warning btn_md btn_bold product-extra__feedback-actions-btn ">Задать вопрос</button>
                   </div>
                 </div>
               </div>
@@ -1402,11 +1497,11 @@
                     <img src="images/certifications/1.jpg" class="product-extra__cert-img" alt="Сертификаты соответствия">
                   </a>
 
-                  <a href="images/certifications/2.jpg" class="product-extra__cert-link js-cert-modal">
+                  <a href="images/certifications/2.jpg" class="product-extra__cert-link js-cert-modal expand-data-xs js-expand-data">
                     <img src="images/certifications/2.jpg" class="product-extra__cert-img" alt="Сертификаты соответствия">
                   </a>
 
-                  <a href="images/certifications/3.jpg" class="product-extra__cert-link js-cert-modal">
+                  <a href="images/certifications/3.jpg" class="product-extra__cert-link js-cert-modal expand-data-xs js-expand-data">
                     <img src="images/certifications/3.jpg" class="product-extra__cert-img" alt="Сертификаты соответствия">
                   </a>
 
@@ -1417,7 +1512,7 @@
 
                 <a
                   href="javascript:void(0);"
-                  class="product-extra__expand-trigger visible-sm js-expand-trigger"
+                  class="product-extra__expand-trigger visible-sm visible-xs js-expand-trigger"
                   data-multiple="true"
                   data-text-hide="Скрыть все сертификаты"
                   data-text-show="Показать все сертификаты">

@@ -63,3 +63,10 @@
 .btn_bold {
   font-weight: 700;
 }
+
+@media screen and (max-width: $screen-xs-max) {
+  .btn_lg {
+    padding: 10px 15px;
+    font-size: 16px;
+  }
+}

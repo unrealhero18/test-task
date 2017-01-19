@@ -73,3 +73,15 @@
     font-size: 13px;
   }
 }
+
+@media screen and (max-width: $screen-xs-max) {
+  .nav__link_page {
+    margin: 0 -15px;
+    &:after {
+      content: none;
+    }
+  }
+  .nav__link_catalog {
+    margin: 0 -15px;
+  }
+}

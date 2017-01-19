@@ -36,3 +36,10 @@
     pointer-events: none;
   }
 }
+
+@media screen and (max-width: $screen-sm-max) {
+  .video-gallery__element {
+    margin-bottom: 15px;
+    width: auto;
+  }
+}

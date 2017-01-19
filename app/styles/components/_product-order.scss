@@ -55,3 +55,24 @@
 .product-order__actions-caption {
   vertical-align: -2px;
 }
+
+@media screen and (max-width: $screen-xs-max) {
+  .product-order {
+    display: block;
+    padding: 15px 8.5% 20px;
+    min-width: 290px;
+    width: auto;
+    height: auto;
+  }
+
+  .product-order__price {
+    margin-bottom: 15px;
+  }
+
+  .product-order__description {
+    margin-top: 15px;
+    min-height: 0;
+    max-height: none;
+    overflow: visible;
+  }
+}

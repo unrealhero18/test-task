@@ -296,3 +296,36 @@
     margin: 0;
   }
 }
+
+@media screen and (max-width: $screen-xs-max) {
+  .header__middle-both {
+    display: block;
+    padding: 0;
+  }
+
+  .header__logo {
+    margin-bottom: 30px;
+  }
+
+  .header__search {
+    margin-bottom: 30px;
+  }
+
+  .header__phone {
+    width: auto;
+  }
+
+  .header__phone-link {
+    font-size: 16px;
+  }
+
+  .header__phone-callback {
+    &.btn_sm {
+      padding: 10px 15px;
+    }
+  }
+
+  .header__actions-list {
+    text-align: center;
+  }
+}
